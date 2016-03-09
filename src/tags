@@ -1,0 +1,707 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	./src/machine/Paging.cc	/^const BitString<uint64_t, 5, 1> Paging::A;$/;"	m	class:Paging	file:
+ADDR	./src/machine/Paging.cc	/^const BitString<uint64_t,12,40> Paging::ADDR;$/;"	m	class:Paging	file:
+Address	./src/devices/ISA_DMA.cc	/^  uint8_t Address;$/;"	m	struct:__anon1	file:
+Auto	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 4, 1> ISA_DMA::Auto;$/;"	m	class:ISA_DMA	file:
+Breakpoint2	./src/machine/Machine.cc	/^void Breakpoint2(vaddr ia) {$/;"	f
+CS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+CTRL_CMDS	./src/devices/Keyboard.cc	/^enum CTRL_CMDS {$/;"	g	file:
+CTRL_CMD_DISABLE_P1	./src/devices/Keyboard.cc	/^  CTRL_CMD_DISABLE_P1        = 0xAD,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_DISABLE_P2	./src/devices/Keyboard.cc	/^  CTRL_CMD_DISABLE_P2        = 0xA7,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_ENABLE_P1	./src/devices/Keyboard.cc	/^  CTRL_CMD_ENABLE_P1         = 0xAE,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_ENABLE_P2	./src/devices/Keyboard.cc	/^  CTRL_CMD_ENABLE_P2         = 0xA8,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_READ_CONFIG	./src/devices/Keyboard.cc	/^  CTRL_CMD_READ_CONFIG       = 0x20,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_READ_CTRL_INPUT	./src/devices/Keyboard.cc	/^  CTRL_CMD_READ_CTRL_INPUT   = 0xC0,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_READ_CTRL_OUTPUT	./src/devices/Keyboard.cc	/^  CTRL_CMD_READ_CTRL_OUTPUT  = 0xD0,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_READ_TEST_INPUTS	./src/devices/Keyboard.cc	/^  CTRL_CMD_READ_TEST_INPUTS  = 0xE0,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_SELF_TEST	./src/devices/Keyboard.cc	/^  CTRL_CMD_SELF_TEST         = 0xAA,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_SYSTEM_RESET	./src/devices/Keyboard.cc	/^  CTRL_CMD_SYSTEM_RESET      = 0xFE,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_TEST_P1	./src/devices/Keyboard.cc	/^  CTRL_CMD_TEST_P1           = 0xAB,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_TEST_P2	./src/devices/Keyboard.cc	/^  CTRL_CMD_TEST_P2           = 0xA9,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_WRITE_CONFIG	./src/devices/Keyboard.cc	/^  CTRL_CMD_WRITE_CONFIG      = 0x60,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_WRITE_CTRL_OUTPUT	./src/devices/Keyboard.cc	/^  CTRL_CMD_WRITE_CTRL_OUTPUT = 0xD1,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_WRITE_P1_OUTPUT	./src/devices/Keyboard.cc	/^  CTRL_CMD_WRITE_P1_OUTPUT   = 0xD2, \/\/ fake receive$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_WRITE_P2_OUTPUT	./src/devices/Keyboard.cc	/^  CTRL_CMD_WRITE_P2_OUTPUT   = 0xD3, \/\/ fake receive$/;"	e	enum:CTRL_CMDS	file:
+CTRL_CMD_WRITE_TO_P2	./src/devices/Keyboard.cc	/^  CTRL_CMD_WRITE_TO_P2       = 0xD4,$/;"	e	enum:CTRL_CMDS	file:
+CTRL_STATS_MASK	./src/devices/Keyboard.cc	/^enum CTRL_STATS_MASK {$/;"	g	file:
+CTRL_STATS_MASK_AUX_BUF	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_AUX_BUF    = 0x20, \/\/00100000$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_CMD_DATA	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_CMD_DATA   = 0x08, \/\/00001000$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_IN_BUF	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_IN_BUF     = 0x02, \/\/00000010$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_LOCKED	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_LOCKED     = 0x10, \/\/00010000$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_OUT_BUF	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_OUT_BUF    = 0x01, \/\/00000001$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_PARITY	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_PARITY     = 0x80  \/\/10000000$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_SYSTEM	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_SYSTEM     = 0x04, \/\/00000100$/;"	e	enum:CTRL_STATS_MASK	file:
+CTRL_STATS_MASK_TIMEOUT	./src/devices/Keyboard.cc	/^  CTRL_STATS_MASK_TIMEOUT    = 0x40, \/\/01000000$/;"	e	enum:CTRL_STATS_MASK	file:
+Command	./src/devices/ISA_DMA.cc	/^  uint8_t Command;$/;"	m	struct:__anon2	file:
+CommandRegister	./src/devices/Keyboard.cc	/^static const uint8_t CommandRegister = 0x64;$/;"	v	file:
+ControllerCheckReadBuffer	./src/devices/Keyboard.cc	/^static bool ControllerCheckReadBuffer() {$/;"	f	file:
+ControllerCheckWriteBuffer	./src/devices/Keyboard.cc	/^static bool ControllerCheckWriteBuffer() {$/;"	f	file:
+ControllerCommand	./src/devices/Keyboard.cc	/^static void ControllerCommand(uint8_t cmd) {$/;"	f	file:
+Count	./src/devices/ISA_DMA.cc	/^  uint8_t Count;$/;"	m	struct:__anon1	file:
+D	./src/machine/Paging.cc	/^const BitString<uint64_t, 6, 1> Paging::D;$/;"	m	class:Paging	file:
+DEV_CMDS	./src/devices/Keyboard.cc	/^enum DEV_CMDS {$/;"	g	file:
+DEV_CMD_ALL_AUTO	./src/devices/Keyboard.cc	/^  DEV_CMD_ALL_AUTO           = 0xF7,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ALL_MAKEBREAK	./src/devices/Keyboard.cc	/^  DEV_CMD_ALL_MAKEBREAK      = 0xF8,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ALL_MAKEBREAK_AUTO	./src/devices/Keyboard.cc	/^  DEV_CMD_ALL_MAKEBREAK_AUTO = 0xFA,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ALL_MAKEONLY	./src/devices/Keyboard.cc	/^  DEV_CMD_ALL_MAKEONLY       = 0xF9,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_AUTODELAY	./src/devices/Keyboard.cc	/^  DEV_CMD_AUTODELAY          = 0xF3,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_DEFAULT_PARAMETERS	./src/devices/Keyboard.cc	/^  DEV_CMD_DEFAULT_PARAMETERS = 0xF6,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_DISABLE	./src/devices/Keyboard.cc	/^  DEV_CMD_DISABLE            = 0xF5,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ECHO	./src/devices/Keyboard.cc	/^  DEV_CMD_ECHO               = 0xEE,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ENABLE	./src/devices/Keyboard.cc	/^  DEV_CMD_ENABLE             = 0xF4,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_ID	./src/devices/Keyboard.cc	/^  DEV_CMD_ID                 = 0xF2,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_RESEND	./src/devices/Keyboard.cc	/^  DEV_CMD_RESEND             = 0xFE,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_RESET	./src/devices/Keyboard.cc	/^  DEV_CMD_RESET              = 0xFF$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_SCAN_CODE_SET	./src/devices/Keyboard.cc	/^  DEV_CMD_SCAN_CODE_SET      = 0xF0,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_SET_LED	./src/devices/Keyboard.cc	/^  DEV_CMD_SET_LED            = 0xED,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_SINGLE_AUTOREPEAT	./src/devices/Keyboard.cc	/^  DEV_CMD_SINGLE_AUTOREPEAT  = 0xFB,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_SINGLE_BREAKONLY	./src/devices/Keyboard.cc	/^  DEV_CMD_SINGLE_BREAKONLY   = 0xFD,$/;"	e	enum:DEV_CMDS	file:
+DEV_CMD_SINGLE_MAKEBREAK	./src/devices/Keyboard.cc	/^  DEV_CMD_SINGLE_MAKEBREAK   = 0xFC,$/;"	e	enum:DEV_CMDS	file:
+DS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+DataPort	./src/devices/Keyboard.cc	/^static const uint8_t DataPort        = 0x60;$/;"	v	file:
+DataRead	./src/devices/Keyboard.cc	/^static uint8_t DataRead() {$/;"	f	file:
+DataWrite	./src/devices/Keyboard.cc	/^static void DataWrite(uint8_t data) {$/;"	f	file:
+DebugBuffer	./src/kernel/Output.cc	/^class DebugBuffer : public OutputBuffer<char> {$/;"	c	file:
+DeviceCommand	./src/devices/Keyboard.cc	/^static uint8_t DeviceCommand(uint8_t cmd) {$/;"	f	file:
+DeviceCommandCheck	./src/devices/Keyboard.cc	/^static void DeviceCommandCheck(uint8_t cmd) {$/;"	f	file:
+DeviceCommandOnce	./src/devices/Keyboard.cc	/^static uint8_t DeviceCommandOnce(uint8_t cmd) {$/;"	f	file:
+Down	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 5, 1> ISA_DMA::Down;$/;"	m	class:ISA_DMA	file:
+DrainReadBuffer	./src/devices/Keyboard.cc	/^static void DrainReadBuffer() {$/;"	f	file:
+EFLAGS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+ERROR	./src/devices/Keyboard.cc	/^enum ERROR {$/;"	g	file:
+ERR_ACK	./src/devices/Keyboard.cc	/^  ERR_ACK                    = 0xFA,$/;"	e	enum:ERROR	file:
+ERR_BAT	./src/devices/Keyboard.cc	/^  ERR_BAT                    = 0xAA,$/;"	e	enum:ERROR	file:
+ERR_BAT_FAILED	./src/devices/Keyboard.cc	/^  ERR_BAT_FAILED             = 0xFC,$/;"	e	enum:ERROR	file:
+ERR_BUF_OVERRUN	./src/devices/Keyboard.cc	/^  ERR_BUF_OVERRUN            = 0x00,$/;"	e	enum:ERROR	file:
+ERR_DIAG_FAILED	./src/devices/Keyboard.cc	/^  ERR_DIAG_FAILED            = 0xFD,$/;"	e	enum:ERROR	file:
+ERR_ECHO_RET	./src/devices/Keyboard.cc	/^  ERR_ECHO_RET               = 0xEE,$/;"	e	enum:ERROR	file:
+ERR_ID_RET	./src/devices/Keyboard.cc	/^  ERR_ID_RET                 = 0x83AB,$/;"	e	enum:ERROR	file:
+ERR_KEY	./src/devices/Keyboard.cc	/^  ERR_KEY                    = 0xFF$/;"	e	enum:ERROR	file:
+ERR_RESEND_CMD	./src/devices/Keyboard.cc	/^  ERR_RESEND_CMD             = 0xFE,$/;"	e	enum:ERROR	file:
+ES	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+Experiments	./src/main/Experiments.cc	/^int Experiments() {$/;"	f
+ExternDebugPrintf	./src/kernel/Output.cc	/^void ExternDebugPrintf(DBG::Level c, const char* fmt, va_list args) {$/;"	f
+FFReset	./src/devices/ISA_DMA.cc	/^  uint8_t FFReset;$/;"	m	struct:__anon2	file:
+FORALLTAGS	./src/kernel/Multiboot.cc	29;"	d	file:
+FS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+G	./src/machine/Paging.cc	/^const BitString<uint64_t, 8, 1> Paging::G;$/;"	m	class:Paging	file:
+GS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+GdbCpu	./src/gdb/Gdb.cc	/^struct GdbCpu : public GdbCpuBase {$/;"	s	file:
+GdbCpuBase	./src/gdb/Gdb.cc	/^  GdbCpuBase() : state(Unknown), ticket(0) {}$/;"	f	struct:GdbCpuBase
+GdbCpuBase	./src/gdb/Gdb.cc	/^struct GdbCpuBase {$/;"	s	file:
+Handler	./src/machine/Machine.cc	/^  typedef pair<funcvoid1_t,ptr_t> Handler;$/;"	t	struct:IrqInfo	file:
+Htid	./src/gdb/Gdb.cc	/^static int Htid = -2;$/;"	v	file:
+ID	./src/machine/Paging.cc	/^const BitString<uint64_t, 4, 1> Paging::PageFaultFlags::ID;$/;"	m	class:Paging::PageFaultFlags	file:
+IFNAME0	./src/extern/lwip/lwip_glue.cc	25;"	d	file:
+IFNAME1	./src/extern/lwip/lwip_glue.cc	26;"	d	file:
+IPI_Experiment	./src/main/Experiments.cc	/^namespace IPI_Experiment {$/;"	n	file:
+InitProcess	./src/main/InitProcess.cc	/^int InitProcess() {$/;"	f
+Intermediate	./src/devices/ISA_DMA.cc	/^  uint8_t Intermediate;$/;"	m	struct:__anon2	file:
+IrqInfo	./src/machine/Machine.cc	/^struct IrqInfo {$/;"	s	file:
+IsrEntry	./src/machine/Machine.cc	/^  IsrEntry(mword* is) : frame(is) {$/;"	f	class:IsrEntry
+IsrEntry	./src/machine/Machine.cc	/^class IsrEntry {$/;"	c	file:
+KEY_BACKSLASH	./src/devices/Keyboard.cc	/^  KEY_BACKSLASH = '\\\\', \/\/ 0x5C$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_BACKSPACE	./src/devices/Keyboard.cc	/^  KEY_BACKSPACE = '\\b', \/\/ 0x08$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_CAPSLOCK	./src/devices/Keyboard.cc	/^  KEY_CAPSLOCK,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_DELETE	./src/devices/Keyboard.cc	/^  KEY_DELETE    = 0x7F,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_DOWN	./src/devices/Keyboard.cc	/^  KEY_DOWN,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_END	./src/devices/Keyboard.cc	/^  KEY_END,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_ENTER	./src/devices/Keyboard.cc	/^  KEY_ENTER     = '\\n', \/\/ 0x0D$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_ESCAPE	./src/devices/Keyboard.cc	/^  KEY_ESCAPE    = 0x1B,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F1	./src/devices/Keyboard.cc	/^  KEY_F1 = 0x1000,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F10	./src/devices/Keyboard.cc	/^  KEY_F10,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F11	./src/devices/Keyboard.cc	/^  KEY_F11,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F12	./src/devices/Keyboard.cc	/^  KEY_F12,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F2	./src/devices/Keyboard.cc	/^  KEY_F2,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F3	./src/devices/Keyboard.cc	/^  KEY_F3,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F4	./src/devices/Keyboard.cc	/^  KEY_F4,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F5	./src/devices/Keyboard.cc	/^  KEY_F5,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F6	./src/devices/Keyboard.cc	/^  KEY_F6,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F7	./src/devices/Keyboard.cc	/^  KEY_F7,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F8	./src/devices/Keyboard.cc	/^  KEY_F8,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_F9	./src/devices/Keyboard.cc	/^  KEY_F9,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_HOME	./src/devices/Keyboard.cc	/^  KEY_HOME,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_INSERT	./src/devices/Keyboard.cc	/^  KEY_INSERT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_0	./src/devices/Keyboard.cc	/^  KEY_KP_0,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_1	./src/devices/Keyboard.cc	/^  KEY_KP_1,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_2	./src/devices/Keyboard.cc	/^  KEY_KP_2,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_3	./src/devices/Keyboard.cc	/^  KEY_KP_3,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_4	./src/devices/Keyboard.cc	/^  KEY_KP_4,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_5	./src/devices/Keyboard.cc	/^  KEY_KP_5,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_6	./src/devices/Keyboard.cc	/^  KEY_KP_6,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_7	./src/devices/Keyboard.cc	/^  KEY_KP_7,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_8	./src/devices/Keyboard.cc	/^  KEY_KP_8,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_9	./src/devices/Keyboard.cc	/^  KEY_KP_9,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_ASTERISK	./src/devices/Keyboard.cc	/^  KEY_KP_ASTERISK,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_DIVIDE	./src/devices/Keyboard.cc	/^  KEY_KP_DIVIDE,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_DOT	./src/devices/Keyboard.cc	/^  KEY_KP_DOT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_ENTER	./src/devices/Keyboard.cc	/^  KEY_KP_ENTER,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_MINUS	./src/devices/Keyboard.cc	/^  KEY_KP_MINUS,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_NUMLOCK	./src/devices/Keyboard.cc	/^  KEY_KP_NUMLOCK,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_KP_PLUS	./src/devices/Keyboard.cc	/^  KEY_KP_PLUS,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_LALT	./src/devices/Keyboard.cc	/^  KEY_LALT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_LCTRL	./src/devices/Keyboard.cc	/^  KEY_LCTRL,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_LEFT	./src/devices/Keyboard.cc	/^  KEY_LEFT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_LGUI	./src/devices/Keyboard.cc	/^  KEY_LGUI,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_LSHIFT	./src/devices/Keyboard.cc	/^  KEY_LSHIFT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_PAUSE	./src/devices/Keyboard.cc	/^  KEY_PAUSE,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_PGDOWN	./src/devices/Keyboard.cc	/^  KEY_PGDOWN,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_PGUP	./src/devices/Keyboard.cc	/^  KEY_PGUP,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_PRTSCR	./src/devices/Keyboard.cc	/^  KEY_PRTSCR,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_QUOTE	./src/devices/Keyboard.cc	/^  KEY_QUOTE     = '\\'', \/\/ 0x60$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_RALT	./src/devices/Keyboard.cc	/^  KEY_RALT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_RCTRL	./src/devices/Keyboard.cc	/^  KEY_RCTRL,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_RGUI	./src/devices/Keyboard.cc	/^  KEY_RGUI,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_RIGHT	./src/devices/Keyboard.cc	/^  KEY_RIGHT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_RSHIFT	./src/devices/Keyboard.cc	/^  KEY_RSHIFT,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_SCROLLLOCK	./src/devices/Keyboard.cc	/^  KEY_SCROLLLOCK,$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_TAB	./src/devices/Keyboard.cc	/^  KEY_TAB       = '\\t', \/\/ 0x09$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_UNKNOWN	./src/devices/Keyboard.cc	/^  KEY_UNKNOWN$/;"	e	enum:Keyboard::KeyCode	file:
+KEY_UP	./src/devices/Keyboard.cc	/^  KEY_UP,$/;"	e	enum:Keyboard::KeyCode	file:
+KeyCode	./src/devices/Keyboard.cc	/^enum : Keyboard::KeyCode {$/;"	g	class:Keyboard	file:
+KosReboot	./src/machine/Machine.cc	/^extern "C" void KosReboot() { Reboot(); }$/;"	f
+LockTest	./src/main/LockTest.cc	/^int LockTest() {$/;"	f
+MQ	./src/extern/lwip/sys_arch.cc	/^typedef MessageQueue<RuntimeRingBuffer<void*,KernelAllocator<void*>>> MQ;$/;"	t	file:
+MaskOn	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 2, 1> ISA_DMA::MaskOn;$/;"	m	class:ISA_DMA	file:
+MaskReset	./src/devices/ISA_DMA.cc	/^  uint8_t MaskReset;$/;"	m	struct:__anon2	file:
+MasterReset	./src/devices/ISA_DMA.cc	/^  uint8_t MasterReset;$/;"	m	struct:__anon2	file:
+MaxIrqCount	./src/machine/Machine.cc	/^static const int MaxIrqCount = 192;$/;"	v	file:
+MaxLevel	./src/kernel/Output.cc	/^static_assert( sizeof(options)\/sizeof(char*) == DBG::MaxLevel, "debug options mismatch" );$/;"	m	class:DBG	file:
+Mode	./src/devices/ISA_DMA.cc	/^  uint8_t Mode;$/;"	m	struct:__anon2	file:
+Mode	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 6, 2> ISA_DMA::Mode;$/;"	m	class:ISA_DMA	file:
+MultiChannelMask	./src/devices/ISA_DMA.cc	/^  uint8_t MultiChannelMask;$/;"	m	struct:__anon2	file:
+MutexTest	./src/main/LockTest.cc	/^void MutexTest() {$/;"	f
+P	./src/machine/Paging.cc	/^const BitString<uint64_t, 0, 1> Paging::P;$/;"	m	class:Paging	file:
+P	./src/machine/Paging.cc	/^const BitString<uint64_t, 0, 1> Paging::PageFaultFlags::P;$/;"	m	class:Paging::PageFaultFlags	file:
+PCD	./src/machine/Paging.cc	/^const BitString<uint64_t, 4, 1> Paging::PCD;$/;"	m	class:Paging	file:
+PS	./src/machine/Paging.cc	/^const BitString<uint64_t, 7, 1> Paging::PS;$/;"	m	class:Paging	file:
+PWT	./src/machine/Paging.cc	/^const BitString<uint64_t, 3, 1> Paging::PWT;$/;"	m	class:Paging	file:
+Page	./src/devices/ISA_DMA.cc	/^  uint8_t Page;$/;"	m	struct:__anon1	file:
+R10	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R11	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R12	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R13	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R14	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R15	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R8	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+R9	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+RAX	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RBP	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RBX	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RCX	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RDI	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RDX	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RIP	./src/gdb/Gdb.cc	/^  R8, R9, R10, R11, R12, R13, R14, R15, RIP,  \/\/ it is preferred to not reorder$/;"	e	enum:Reg	file:
+RSI	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RSP	./src/gdb/Gdb.cc	/^  RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP,     \/\/ registers are in order gdb front-end expects!$/;"	e	enum:Reg	file:
+RSVD	./src/machine/Paging.cc	/^const BitString<uint64_t, 3, 1> Paging::PageFaultFlags::RSVD;$/;"	m	class:Paging::PageFaultFlags	file:
+RW	./src/machine/Paging.cc	/^const BitString<uint64_t, 1, 1> Paging::RW;$/;"	m	class:Paging	file:
+Reboot	./src/machine/Machine.cc	/^void Reboot(vaddr ia) {$/;"	f
+Reboot	./src/unit/marray.cc	/^void Reboot(unsigned long) { unreachable(); }$/;"	f
+Reg	./src/gdb/Gdb.cc	/^enum Reg {$/;"	g	file:
+Request	./src/devices/ISA_DMA.cc	/^  uint8_t Request;$/;"	m	struct:__anon2	file:
+Running	./src/gdb/Gdb.cc	/^  volatile enum { Unknown, Stopped, Running } state;$/;"	e	enum:GdbCpuBase::__anon3	file:
+SENTINEL	./src/main/LockTest.cc	/^static const mword SENTINEL = ~0;$/;"	v	file:
+SIGTERM	./src/ulib/pthread.cc	20;"	d	file:
+SS	./src/gdb/Gdb.cc	/^  EFLAGS = 0, CS, SS, DS, ES, FS, GS          \/\/ 32-bit registers$/;"	e	enum:Reg	file:
+Scheduler	./src/runtime/Scheduler.cc	/^Scheduler::Scheduler() : readyCount(0), preemption(0), resumption(0), partner(this) {$/;"	f	class:Scheduler
+ScreenBuffer	./src/kernel/Output.cc	/^  ScreenBuffer(int firstline, int lastline, int startline = 0)$/;"	f	class:ScreenBuffer
+ScreenBuffer	./src/kernel/Output.cc	/^class ScreenBuffer : public OutputBuffer<char> {$/;"	c	file:
+Selector	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 0, 2> ISA_DMA::Selector;$/;"	m	class:ISA_DMA	file:
+SelfTest	./src/devices/Keyboard.cc	/^static bool SelfTest() {$/;"	f	file:
+SemaphoreTest	./src/main/LockTest.cc	/^void SemaphoreTest() {$/;"	f
+SetLeds	./src/devices/Keyboard.cc	/^static void SetLeds(uint8_t led) {$/;"	f	file:
+SingleChannelMask	./src/devices/ISA_DMA.cc	/^  uint8_t SingleChannelMask;$/;"	m	struct:__anon2	file:
+Status	./src/devices/ISA_DMA.cc	/^  uint8_t Status;$/;"	m	struct:__anon2	file:
+StatusRegister	./src/devices/Keyboard.cc	/^static const uint8_t StatusRegister  = 0x64;$/;"	v	file:
+Steppoint	./src/machine/Machine.cc	/^void Steppoint() {$/;"	f
+Stopped	./src/gdb/Gdb.cc	/^  volatile enum { Unknown, Stopped, Running } state;$/;"	e	enum:GdbCpuBase::__anon3	file:
+SyncQueueTest	./src/main/LockTest.cc	/^void SyncQueueTest() {$/;"	f
+TF	./src/gdb/Gdb.cc	/^static const int TF = 0x100;$/;"	v	file:
+TcpTest	./src/main/TcpTest.cc	/^int TcpTest() {$/;"	f
+Transfer	./src/devices/ISA_DMA.cc	/^const BitString<uint8_t, 2, 2> ISA_DMA::Transfer;$/;"	m	class:ISA_DMA	file:
+US	./src/machine/Paging.cc	/^const BitString<uint64_t, 2, 1> Paging::PageFaultFlags::US;$/;"	m	class:Paging::PageFaultFlags	file:
+US	./src/machine/Paging.cc	/^const BitString<uint64_t, 2, 1> Paging::US;$/;"	m	class:Paging	file:
+Unknown	./src/gdb/Gdb.cc	/^  volatile enum { Unknown, Stopped, Running } state;$/;"	e	enum:GdbCpuBase::__anon3	file:
+VCont	./src/gdb/Gdb.cc	/^  VCont() : action(0) {}$/;"	f	struct:VCont
+VCont	./src/gdb/Gdb.cc	/^struct VCont {$/;"	s	file:
+WR	./src/machine/Paging.cc	/^const BitString<uint64_t, 1, 1> Paging::PageFaultFlags::WR;$/;"	m	class:Paging::PageFaultFlags	file:
+XD	./src/machine/Paging.cc	/^const BitString<uint64_t,63, 1> Paging::XD;$/;"	m	class:Paging	file:
+XYZ	./src/user/kbloop.cc	/^class XYZ {$/;"	c	file:
+_KOS_sighandler	./src/ulib/libKOS.cc	/^extern "C" void _KOS_sighandler(mword s) {$/;"	f
+_Unwind_DebugHook_addr	./src/gdb/Gdb.cc	/^static mword _Unwind_DebugHook_addr = 0;$/;"	v	file:
+_Unwind_DebugHook_break	./src/gdb/Gdb.cc	/^static bool  _Unwind_DebugHook_break = false; \/\/ detect if breakpoint was inserted on _Unwind_DebugHook$/;"	v	file:
+__STRICT_ANSI__	./src/extern/cdi/cdi_glue.cc	27;"	d	file:
+__STRICT_ANSI__	./src/gdb/Gdb.cc	13;"	d	file:
+__STRICT_ANSI__	./src/kernel/Output.cc	23;"	d	file:
+__assert_func	./src/kernel/syscalls.cc	/^extern "C" void __assert_func( const char* const file, size_t line,$/;"	f
+__dso_handle	./src/kernel/syscalls.cc	/^void* __dso_handle = nullptr;$/;"	v
+__packed	./src/gdb/Gdb.cc	/^} __packed;$/;"	v	typeref:struct:GdbCpu
+__packed	./src/gdb/Gdb.cc	/^} __packed;$/;"	v	typeref:struct:GdbCpuBase
+_calloc_r	./src/kernel/syscalls.cc	/^extern "C" void* _calloc_r(_reent* r, size_t nmemb, size_t size) {$/;"	f
+_calloc_r	./src/ulib/libKOS.cc	/^extern "C" void* _calloc_r(_reent* r, size_t nmemb, size_t size) { return calloc(nmemb, size); }$/;"	f
+_exit	./src/kernel/syscalls.cc	/^extern "C" void _exit(int) {$/;"	f
+_exit	./src/ulib/libKOS.cc	/^extern "C" void _exit(int) {$/;"	f
+_free_r	./src/kernel/syscalls.cc	/^extern "C" void _free_r(_reent* r, void* ptr) { free(ptr); }$/;"	f
+_free_r	./src/ulib/libKOS.cc	/^extern "C" void _free_r(_reent* r, void* ptr) { free(ptr); }$/;"	f
+_init_sig_handler	./src/kernel/syscalls.cc	/^extern "C" void _init_sig_handler(vaddr sighandler) {$/;"	f
+_initialize_KOS_standard_library	./src/ulib/libKOS.cc	/^extern "C" void _initialize_KOS_standard_library() {$/;"	f
+_malloc_r	./src/kernel/syscalls.cc	/^extern "C" void* _malloc_r(_reent* r, size_t size) { return malloc(size); }$/;"	f
+_malloc_r	./src/ulib/libKOS.cc	/^extern "C" void* _malloc_r(_reent* r, size_t size) { return malloc(size); }$/;"	f
+_mmap	./src/kernel/syscalls.cc	/^extern "C" int _mmap(void** addr, size_t len, int protflags, int fildes, off_t off) {$/;"	f
+_munmap	./src/kernel/syscalls.cc	/^extern "C" int _munmap(void* addr, size_t len) {$/;"	f
+_pthread_create	./src/kernel/syscalls.cc	/^extern "C" pthread_t _pthread_create(funcvoid2_t invoke, funcvoid1_t func, void* data) {$/;"	f
+_pthread_start	./src/ulib/pthread.cc	/^static void _pthread_start(void* (*func)(void*), void* data) {$/;"	f	file:
+_realloc_r	./src/kernel/syscalls.cc	/^extern "C" void* _realloc_r(_reent* r, void* ptr, size_t size) {$/;"	f
+_realloc_r	./src/ulib/libKOS.cc	/^extern "C" void* _realloc_r(_reent* r, void* ptr, size_t size) { return realloc(ptr, size); }$/;"	f
+abort	./src/kernel/syscalls.cc	/^extern "C" void abort() {$/;"	f
+abort	./src/ulib/libKOS.cc	/^extern "C" void abort() { _exit(-1); }$/;"	f
+acquireCount	./src/main/LockTest.cc	/^static mword acquireCount;$/;"	v	file:
+action	./src/gdb/Gdb.cc	/^  char action;$/;"	m	struct:VCont	file:
+allocContig	./src/kernel/FrameManager.cc	/^paddr FrameManager::allocContig(size_t& size, paddr align, paddr limit) {$/;"	f	class:FrameManager
+allocContig	./src/kernel/MemoryManager.cc	/^vaddr MemoryManager::allocContig(size_t& size, paddr align, paddr limit) {$/;"	f	class:MemoryManager
+allstop	./src/gdb/Gdb.cc	/^static volatile bool allstop = false;$/;"	v	file:
+asyncIrqLoop	./src/machine/Machine.cc	/^void Machine::asyncIrqLoop() {$/;"	f	class:Machine
+asyncIrqSem	./src/machine/Machine.cc	/^static Semaphore asyncIrqSem;$/;"	v	file:
+bc	./src/unit/hierbitmap.cc	/^static const size_t bc = 1ull << 20;$/;"	v	file:
+blockStore	./src/kernel/MemoryManager.cc	/^BlockStore MemoryManager::blockStore[1 + MemoryManager::topidx - MemoryManager::botidx];$/;"	m	class:MemoryManager	file:
+bootCleanup	./src/machine/Machine.cc	/^void Machine::bootCleanup() {$/;"	f	class:Machine
+bootMain	./src/machine/Machine.cc	/^void Machine::bootMain() {$/;"	f	class:Machine
+bpMap	./src/gdb/Gdb.cc	/^static map<mword,char> bpMap;$/;"	v	file:
+bs	./src/unit/bitmap.cc	/^static const size_t bs = 64*8;$/;"	v	file:
+bspApicID	./src/machine/Machine.cc	/^static mword bspApicID = ~mword(0);$/;"	v	file:
+bspIndex	./src/machine/Machine.cc	/^static mword bspIndex = ~mword(0);$/;"	v	file:
+buffer	./src/devices/Devices.cc	/^char Screen::buffer[xmax * ymax]; \/\/ Screen.h$/;"	m	class:Screen	file:
+cTID	./src/gdb/Gdb.cc	/^static int cTID() { return LocalProcessor::getIndex() + 1; }$/;"	f	file:
+calloc	./src/kernel/syscalls.cc	/^extern "C" void* calloc(size_t nmemb, size_t size) {$/;"	f
+cancel	./src/runtime/Thread.cc	/^void Thread::cancel() {$/;"	f	class:Thread
+cdi_driver_destroy	./src/extern/cdi/cdi_glue.cc	/^void cdi_driver_destroy(cdi_driver* driver) {$/;"	f
+cdi_driver_init	./src/extern/cdi/cdi_glue.cc	/^void cdi_driver_init(cdi_driver* driver) {$/;"	f
+cdi_driver_register	./src/extern/cdi/cdi_glue.cc	/^void cdi_driver_register(cdi_driver* driver) {$/;"	f
+cdi_list_create	./src/extern/cdi/cdi_glue.cc	/^cdi_list_t cdi_list_create() {$/;"	f
+cdi_list_destroy	./src/extern/cdi/cdi_glue.cc	/^void cdi_list_destroy(cdi_list_t list) {$/;"	f
+cdi_list_empty	./src/extern/cdi/cdi_glue.cc	/^size_t cdi_list_empty(cdi_list_t list) {$/;"	f
+cdi_list_get	./src/extern/cdi/cdi_glue.cc	/^ptr_t cdi_list_get(cdi_list_t list, size_t index) {$/;"	f
+cdi_list_implementation	./src/extern/cdi/cdi_glue.cc	/^struct cdi_list_implementation {$/;"	s	file:
+cdi_list_insert	./src/extern/cdi/cdi_glue.cc	/^cdi_list_t cdi_list_insert(cdi_list_t list, size_t index, ptr_t value) {$/;"	f
+cdi_list_pop	./src/extern/cdi/cdi_glue.cc	/^ptr_t cdi_list_pop(cdi_list_t list) {$/;"	f
+cdi_list_push	./src/extern/cdi/cdi_glue.cc	/^cdi_list_t cdi_list_push(cdi_list_t list, ptr_t value) {$/;"	f
+cdi_list_remove	./src/extern/cdi/cdi_glue.cc	/^ptr_t cdi_list_remove(cdi_list_t list, size_t index) {$/;"	f
+cdi_list_size	./src/extern/cdi/cdi_glue.cc	/^size_t cdi_list_size(cdi_list_t list) {$/;"	f
+cdi_mem_alloc	./src/extern/cdi/cdi_glue.cc	/^cdi_mem_area* cdi_mem_alloc(size_t size, cdi_mem_flags_t flags) {$/;"	f
+cdi_mem_free	./src/extern/cdi/cdi_glue.cc	/^void cdi_mem_free(cdi_mem_area* area) {$/;"	f
+cdi_mem_map	./src/extern/cdi/cdi_glue.cc	/^cdi_mem_area* cdi_mem_map(uintptr_t pAddr, size_t size) {$/;"	f
+cdi_net_device_init	./src/extern/cdi/cdi_glue.cc	/^void cdi_net_device_init(struct cdi_net_device* device) {$/;"	f
+cdi_net_driver_destroy	./src/extern/cdi/cdi_glue.cc	/^void cdi_net_driver_destroy(struct cdi_net_driver* driver) {$/;"	f
+cdi_net_driver_init	./src/extern/cdi/cdi_glue.cc	/^void cdi_net_driver_init(struct cdi_net_driver* driver) {$/;"	f
+cdi_net_receive	./src/extern/cdi/cdi_glue.cc	/^void cdi_net_receive(cdi_net_device* device, ptr_t buffer, size_t size) {$/;"	f
+cdi_net_send	./src/extern/cdi/cdi_glue.cc	/^void cdi_net_send(ptr_t buffer, size_t size) {$/;"	f
+cdi_pci_alloc_ioports	./src/extern/cdi/cdi_glue.cc	/^void cdi_pci_alloc_ioports(cdi_pci_device* device) {$/;"	f
+cdi_pci_free_ioports	./src/extern/cdi/cdi_glue.cc	/^void cdi_pci_free_ioports(cdi_pci_device* device) {$/;"	f
+cdi_printf	./src/extern/cdi/cdi_glue.cc	/^extern "C" void cdi_printf(const char* fmt, ...) {$/;"	f
+cdi_register_irq	./src/extern/cdi/cdi_glue.cc	/^void cdi_register_irq(uint8_t irq, void (*handler)(cdi_device *), cdi_device* device) {$/;"	f
+cdi_sleep_ms	./src/extern/cdi/cdi_glue.cc	/^void cdi_sleep_ms(uint32_t ms) {$/;"	f
+char2hex	./src/gdb/Gdb.cc	/^static int char2hex(char ch) {$/;"	f	file:
+check	./src/machine/Processor.cc	/^void Processor::check(bool output) {$/;"	f	class:Processor
+checkAllBuses	./src/devices/PCI.cc	/^void PCI::checkAllBuses(list<PCIDevice>& pciDevList) {$/;"	f	class:PCI
+checkBus	./src/devices/PCI.cc	/^void PCI::checkBus(uint8_t bus, list<PCIDevice>& pciDevList) {$/;"	f	class:PCI
+checkDevice	./src/devices/PCI.cc	/^void PCI::checkDevice(uint8_t bus, uint8_t dev, list<PCIDevice>& pciDevList) {$/;"	f	class:PCI
+checkFunction	./src/devices/PCI.cc	/^void PCI::checkFunction(uint8_t bus, uint8_t dev, uint8_t func, list<PCIDevice>& pciDevList) {$/;"	f	class:PCI
+checkSignals	./src/machine/Machine.cc	/^  void checkSignals() {$/;"	f	class:IsrEntry
+close	./src/kernel/syscalls.cc	/^extern "C" int close(int fildes) {$/;"	f
+close	./src/ulib/libKOS.cc	/^extern "C" int close(int fildes) {$/;"	f
+consumer	./src/main/LockTest.cc	/^static void consumer(ptr_t) {$/;"	f	file:
+cpus	./src/gdb/Gdb.cc	/^static GdbCpu* cpus = nullptr;$/;"	v	file:
+create	./src/runtime/Thread.cc	/^Thread* Thread::create() {$/;"	f	class:Thread
+create	./src/runtime/Thread.cc	/^Thread* Thread::create(size_t ss) {$/;"	f	class:Thread
+create	./src/runtime/Thread.cc	/^Thread* Thread::create(vaddr mem, size_t ss) {$/;"	f	class:Thread
+createThread	./src/kernel/Process.cc	/^mword Process::createThread(funcvoid2_t wrapper, funcvoid1_t func, ptr_t data) {$/;"	f	class:Process
+cs	./src/machine/Machine.cc	/^  constexpr mword* cs()     const { return frame+1; }$/;"	f	class:IsrEntry	file:
+dbg_buffer	./src/kernel/Output.cc	/^static DebugBuffer dbg_buffer;$/;"	v	file:
+deregisterIrqAsync	./src/machine/Machine.cc	/^void Machine::deregisterIrqAsync(mword irq, funcvoid1_t handler) {$/;"	f	class:Machine
+destroy	./src/runtime/Thread.cc	/^void Thread::destroy() {$/;"	f	class:Thread
+destroyThread	./src/kernel/Process.cc	/^bool Process::destroyThread(Thread& t) {$/;"	f	class:Process
+detach	./src/gdb/Gdb.cc	/^  void detach() {$/;"	f	struct:VCont
+device	./src/extern/lwip/lwip_glue.cc	/^  struct cdi_net_device* device;$/;"	m	struct:ethernetif	typeref:struct:ethernetif::cdi_net_device	file:
+direct	./src/runtime/Thread.cc	/^void Thread::direct(ptr_t func, ptr_t p1, ptr_t p2, ptr_t p3, ptr_t p4) {$/;"	f	class:Thread
+disable	./src/machine/APIC.cc	/^void PIC::disable() { \/\/ see http:\/\/wiki.osdev.org\/PIC$/;"	f	class:PIC
+dl_mmap	./src/kernel/MemoryManager.cc	/^void* dl_mmap(void* addr, size_t len, int, int, int, _off64_t) {$/;"	f
+dl_munmap	./src/kernel/MemoryManager.cc	/^int dl_munmap(void* addr, size_t len) {$/;"	f
+done	./src/main/Experiments.cc	/^static volatile bool done = false;$/;"	m	namespace:IPI_Experiment	file:
+driverList	./src/extern/cdi/cdi_glue.cc	/^list<cdi_driver*> driverList;$/;"	v
+enqueue	./src/runtime/Scheduler.cc	/^void Scheduler::enqueue(Thread& t) {$/;"	f	class:Scheduler
+ethaddr	./src/extern/lwip/lwip_glue.cc	/^  struct eth_addr *ethaddr;$/;"	m	struct:ethernetif	typeref:struct:ethernetif::eth_addr	file:
+ethernetif	./src/extern/lwip/lwip_glue.cc	/^struct ethernetif {$/;"	s	file:
+ethernetif_init	./src/extern/lwip/lwip_glue.cc	/^err_t ethernetif_init(struct netif *netif) {$/;"	f
+ethernetif_input	./src/extern/lwip/lwip_glue.cc	/^void ethernetif_input(struct netif *netif, bufptr_t buffer, size_t size) {$/;"	f
+exception_handler_0x00	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x00(mword* isrFrame) {$/;"	f
+exception_handler_0x01	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x01(mword* isrFrame) {$/;"	f
+exception_handler_0x02	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x02(mword* isrFrame) {$/;"	f
+exception_handler_0x03	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x03(mword* isrFrame) {$/;"	f
+exception_handler_0x04	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x04(mword* isrFrame) {$/;"	f
+exception_handler_0x05	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x05(mword* isrFrame) {$/;"	f
+exception_handler_0x06	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x06(mword* isrFrame) {$/;"	f
+exception_handler_0x07	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x07(mword* isrFrame) {$/;"	f
+exception_handler_0x09	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x09(mword* isrFrame) {$/;"	f
+exception_handler_0x10	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x10(mword* isrFrame) {$/;"	f
+exception_handler_0x12	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x12(mword* isrFrame) {$/;"	f
+exception_handler_0x13	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x13(mword* isrFrame) {$/;"	f
+exception_handler_0x14	./src/machine/Machine.cc	/^extern "C" void exception_handler_0x14(mword* isrFrame) {$/;"	f
+exception_handler_errcode_0x08	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x08(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x0a	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x0a(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x0b	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x0b(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x0c	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x0c(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x0d	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x0d(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x0e	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x0e(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_errcode_0x11	./src/machine/Machine.cc	/^extern "C" void exception_handler_errcode_0x11(mword* isrFrame, mword ec) {$/;"	f
+exception_handler_undefined	./src/machine/Machine.cc	/^extern "C" void exception_handler_undefined(mword* isrFrame, mword vec) {$/;"	f
+exec	./src/kernel/Process.cc	/^void Process::exec(const string& fileName) {$/;"	f	class:Process
+exit	./src/kernel/Process.cc	/^void Process::exit() {$/;"	f	class:Process
+exitThread	./src/kernel/Process.cc	/^void Process::exitThread(ptr_t result) {$/;"	f	class:Process
+findCdiDriver	./src/extern/cdi/cdi_glue.cc	/^bool findCdiDriver(const PCIDevice &pciDev) {$/;"	f
+foobar1	./src/user/threadtest.cc	/^static void* foobar1(void*) {$/;"	f	file:
+foobar2	./src/user/threadtest.cc	/^static void* foobar2(void*) {$/;"	f	file:
+foobar3	./src/user/threadtest.cc	/^static void* foobar3(void*) {$/;"	f	file:
+frame	./src/machine/Machine.cc	/^  mword* frame;$/;"	m	class:IsrEntry	file:
+frameManager	./src/machine/Machine.cc	/^static FrameManager frameManager;$/;"	v	file:
+free	./src/kernel/syscalls.cc	/^extern "C" void free(void* ptr) { MemoryManager::legacy_free(ptr); }$/;"	f
+fstat	./src/kernel/syscalls.cc	/^extern "C" int fstat(int fildes, struct stat *buf) {$/;"	f
+fstat	./src/ulib/libKOS.cc	/^extern "C" int fstat(int fildes, struct stat *buf) {$/;"	f
+funcint4_t	./src/kernel/syscalls.cc	/^typedef int (*funcint4_t)(mword, mword, mword, mword);$/;"	t	file:
+gdb	./src/devices/Devices.cc	/^bool SerialDevice::gdb;           \/\/ Serial.h$/;"	m	class:SerialDevice	file:
+gdbFaultHandlerCalled	./src/gdb/Gdb.cc	/^volatile int gdbFaultHandlerCalled  = 0; \/\/ flags an error from mem2hex\/hex2mem$/;"	v
+gdbFaultHandlerEnabled	./src/gdb/Gdb.cc	/^volatile int gdbFaultHandlerEnabled = 0; \/\/ can activate fault handler for gdb session$/;"	v
+getAllRegisters	./src/gdb/Gdb.cc	/^static reg64_t* getAllRegisters(mword cpuIdx = cTID()-1) {$/;"	f	file:
+getCPU	./src/gdb/Gdb.cc	/^static GdbCpu& getCPU() { return cpus[LocalProcessor::getIndex()]; }$/;"	f	file:
+getCacheInfo	./src/machine/CPU.cc	/^void CPUID::getCacheInfo() {$/;"	f	class:CPUID
+getGdbCpu	./src/gdb/Gdb.cc	/^extern "C" GdbCpu* getGdbCpu() {$/;"	f
+getGdbStack	./src/gdb/Gdb.cc	/^extern "C" mword getGdbStack(GdbCpu* cpu) {$/;"	f
+getMemory	./src/kernel/Multiboot.cc	/^void Multiboot::getMemory(RegionSet<Region<paddr>>& rs) {$/;"	f	class:Multiboot
+getRSDP	./src/kernel/Multiboot.cc	/^vaddr Multiboot::getRSDP() {$/;"	f	class:Multiboot
+getRedirects	./src/machine/APIC.cc	/^uint8_t IOAPIC::getRedirects() {$/;"	f	class:IOAPIC
+getReg32	./src/gdb/Gdb.cc	/^static reg32_t getReg32(size_t regno, mword cpuIdx = cTID()-1) {$/;"	f	file:
+getReg64	./src/gdb/Gdb.cc	/^static reg64_t getReg64(size_t regno, mword cpuIdx = cTID()-1) {$/;"	f	file:
+getRegptr32	./src/gdb/Gdb.cc	/^static reg32_t* getRegptr32(size_t regno, mword cpuIdx = cTID()-1) {$/;"	f	file:
+getRegptr64	./src/gdb/Gdb.cc	/^static reg64_t* getRegptr64(size_t regno, mword cpuIdx = cTID()-1) {$/;"	f	file:
+getVersion	./src/machine/APIC.cc	/^uint8_t IOAPIC::getVersion() {$/;"	f	class:IOAPIC
+getbyte	./src/gdb/Gdb.cc	/^static int getbyte() {$/;"	f	file:
+getcid	./src/kernel/syscalls.cc	/^extern "C" pid_t getcid() {$/;"	f
+getcid	./src/ulib/libKOS.cc	/^extern "C" pid_t getcid() {$/;"	f
+getenv	./src/ulib/libKOS.cc	/^extern "C" char *getenv(const char *name) {$/;"	f
+getpacket	./src/gdb/Gdb.cc	/^static char* getpacket(char* buffer, int buflen) {$/;"	f	file:
+getpid	./src/kernel/syscalls.cc	/^extern "C" pid_t getpid() {$/;"	f
+getpid	./src/ulib/libKOS.cc	/^extern "C" pid_t getpid() {$/;"	f
+globalIrq	./src/machine/Machine.cc	/^  uint8_t  globalIrq;$/;"	m	struct:IrqInfo	file:
+handleH	./src/gdb/Gdb.cc	/^static bool handleH(char* in, char* out) {$/;"	f	file:
+handlePacket	./src/gdb/Gdb.cc	/^static void handlePacket(int sigval) {$/;"	f	file:
+handleReadMemory	./src/gdb/Gdb.cc	/^static bool handleReadMemory(char* in, char* out) {$/;"	f	file:
+handleReadRegister	./src/gdb/Gdb.cc	/^static bool handleReadRegister(char* in, char* out, mword idx = cTID()) {$/;"	f	file:
+handleReadRegisters	./src/gdb/Gdb.cc	/^static bool handleReadRegisters(char* in, char* out, mword idx = cTID()) {$/;"	f	file:
+handleReasonTargetHalted	./src/gdb/Gdb.cc	/^static bool handleReasonTargetHalted(char* in, char* out, int sigval, int idx = cTID()) {$/;"	f	file:
+handleRemoveSoftBreak	./src/gdb/Gdb.cc	/^static bool handleRemoveSoftBreak(char* in, char* out) {$/;"	f	file:
+handleSetSoftBreak	./src/gdb/Gdb.cc	/^static bool handleSetSoftBreak(char* in, char* out) {$/;"	f	file:
+handleThreadAlive	./src/gdb/Gdb.cc	/^static bool handleThreadAlive(char* in, char* out) {$/;"	f	file:
+handleWriteMemory	./src/gdb/Gdb.cc	/^static bool handleWriteMemory(char* in, char* out) {$/;"	f	file:
+handleWriteRegister	./src/gdb/Gdb.cc	/^static bool handleWriteRegister(char* in, char* out, mword idx = cTID()) {$/;"	f	file:
+handleWriteRegisters	./src/gdb/Gdb.cc	/^static bool handleWriteRegisters(char* in, char* out, mword idx = cTID()) {$/;"	f	file:
+handle_exception	./src/gdb/Gdb.cc	/^extern "C" void handle_exception (int64_t vec) {$/;"	f
+handle_qAttached	./src/gdb/Gdb.cc	/^static bool handle_qAttached(char* in, char* out) {$/;"	f	file:
+handle_qC	./src/gdb/Gdb.cc	/^static bool handle_qC(char* in, char* out) {$/;"	f	file:
+handle_qOffsets	./src/gdb/Gdb.cc	/^static bool handle_qOffsets(char* in, char* out) {$/;"	f	file:
+handle_qSupported	./src/gdb/Gdb.cc	/^static bool handle_qSupported(char* in, char* out) {$/;"	f	file:
+handle_qSymbol	./src/gdb/Gdb.cc	/^static bool handle_qSymbol(char* in, char* out) {$/;"	f	file:
+handle_qSymbolResponse	./src/gdb/Gdb.cc	/^static bool handle_qSymbolResponse(char* in, char* out) {$/;"	f	file:
+handle_qTStatus	./src/gdb/Gdb.cc	/^static bool handle_qTStatus(char* in, char* out) {$/;"	f	file:
+handle_qThreadExtraInfo	./src/gdb/Gdb.cc	/^static bool handle_qThreadExtraInfo(char* in, char* out) {$/;"	f	file:
+handle_qfThreadInfo	./src/gdb/Gdb.cc	/^static bool handle_qfThreadInfo(char* in, char* out) {$/;"	f	file:
+handle_qsThreadInfo	./src/gdb/Gdb.cc	/^static bool handle_qsThreadInfo(char* in, char* out) {$/;"	f	file:
+handlers	./src/machine/Machine.cc	/^  list<Handler,KernelAllocator<Handler>> handlers;$/;"	m	struct:IrqInfo	file:
+hex2mem	./src/gdb/Gdb.cc	/^static char* hex2mem(char *buf, char *mem, int count, int may_fault) {$/;"	f	file:
+hexToInt	./src/gdb/Gdb.cc	/^static int hexToInt(char **ptr, long *intValue) {$/;"	f	file:
+hexchars	./src/gdb/Gdb.cc	/^static const char hexchars[]="0123456789abcdef";$/;"	v	file:
+impl	./src/extern/cdi/cdi_glue.cc	/^  list<ptr_t> impl;$/;"	m	struct:cdi_list_implementation	file:
+in	./src/gdb/Gdb.cc	/^static char in[4096];$/;"	v	file:
+init	./src/devices/Keyboard.cc	/^void Keyboard::init() {                      \/\/ assume interrupts are disabled$/;"	f	class:Keyboard
+init	./src/devices/PIT.cc	/^void PIT::init() {$/;"	f	class:PIT
+init	./src/devices/RTC.cc	/^void RTC::init() { \/\/ see http:\/\/wiki.osdev.org\/RTC$/;"	f	class:RTC
+init	./src/kernel/Multiboot.cc	/^vaddr Multiboot::init( mword magic, vaddr mbi ) {$/;"	f	class:Multiboot
+init	./src/kernel/Output.cc	/^void DBG::init( char* dstring, bool msg ) {$/;"	f	class:DBG
+init	./src/machine/Processor.cc	/^void Processor::init(paddr pml4,$/;"	f	class:Processor
+init0	./src/kernel/MemoryManager.cc	/^void MemoryManager::init0( vaddr p, size_t s ) {$/;"	f	class:MemoryManager
+init2	./src/kernel/Multiboot.cc	/^void Multiboot::init2() {$/;"	f	class:Multiboot
+initAP	./src/machine/Machine.cc	/^void Machine::initAP(mword idx) {$/;"	f	class:Machine
+initAP2	./src/machine/Machine.cc	/^void Machine::initAP2() {$/;"	f	class:Machine
+initBSP	./src/machine/Machine.cc	/^void Machine::initBSP(mword magic, vaddr mbiAddr, mword idx) {$/;"	f	class:Machine
+initBSP2	./src/machine/Machine.cc	/^void Machine::initBSP2() {$/;"	f	class:Machine
+initCdiDrivers	./src/extern/cdi/cdi_glue.cc	/^void initCdiDrivers() {$/;"	f
+initDebug	./src/kernel/Multiboot.cc	/^void Multiboot::initDebug( bool msg ) {$/;"	f	class:Multiboot
+initGdb	./src/gdb/Gdb.cc	/^void initGdb(mword bspIdx) {$/;"	f
+initInterrupts	./src/machine/Processor.cc	/^void LocalProcessor::initInterrupts(bool irqs) {$/;"	f	class:LocalProcessor
+install	./src/machine/Processor.cc	/^void Processor::install() {$/;"	f	class:Processor
+invokeThread	./src/runtime/Scheduler.cc	/^extern "C" void invokeThread(Thread* prevThread, Runtime::MemoryContext* ctx, funcvoid3_t func, ptr_t arg1, ptr_t arg2, ptr_t arg3) {$/;"	f
+invokeUser	./src/kernel/Process.cc	/^void Process::invokeUser(funcvoid2_t func, ptr_t arg1, ptr_t arg2) {$/;"	f	class:Process
+ioApicAddr	./src/machine/Machine.cc	/^  paddr    ioApicAddr;$/;"	m	struct:IrqInfo	file:
+ioApicIrq	./src/machine/Machine.cc	/^  uint8_t  ioApicIrq;$/;"	m	struct:IrqInfo	file:
+iolock	./src/user/manythread.cc	/^static pthread_mutex_t iolock;$/;"	v	file:
+iolock	./src/user/threadtest.cc	/^static pthread_mutex_t iolock;$/;"	v	file:
+ip_to_string	./src/extern/lwip/lwip_glue.cc	/^static const char *ip_to_string(uint32_t ip) {$/;"	f	file:
+irqHandler	./src/devices/Keyboard.cc	/^void Keyboard::irqHandler(Keyboard* keyb) {$/;"	f	class:Keyboard
+irqHandlerInternal	./src/devices/Keyboard.cc	/^inline void Keyboard::irqHandlerInternal() {$/;"	f	class:Keyboard
+irqMask	./src/machine/Machine.cc	/^static Bitmap<MaxIrqCount> irqMask;     \/\/ IRQ bitmap$/;"	v	file:
+irqTable	./src/machine/Machine.cc	/^} irqTable[MaxIrqCount];$/;"	v	typeref:struct:IrqInfo
+irq_handler_0xe0	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xe0(mword* isrFrame) { \/\/ APIC::WakeIPI$/;"	f
+irq_handler_0xed	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xed(mword* isrFrame) { \/\/ APIC::PreemptIPI$/;"	f
+irq_handler_0xee	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xee(mword* isrFrame) { \/\/ APIC::TestIPI$/;"	f
+irq_handler_0xef	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xef(mword* isrFrame) { \/\/ APIC::StopIPI$/;"	f
+irq_handler_0xf0	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xf0(mword* isrFrame) { \/\/ PIT interrupt$/;"	f
+irq_handler_0xf7	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xf7(mword* isrFrame) { \/\/ parallel interrupt, spurious no problem$/;"	f
+irq_handler_0xf8	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xf8(mword* isrFrame) { \/\/ RTC interrupt$/;"	f
+irq_handler_0xf9	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xf9(mword* isrFrame) { \/\/ spuriously seen$/;"	f
+irq_handler_0xfc	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xfc(mword* isrFrame) { \/\/ mouse interrupt$/;"	f
+irq_handler_0xff	./src/machine/Machine.cc	/^extern "C" void irq_handler_0xff(mword* isrFrame) { \/\/ bochs quirk?$/;"	f
+irq_handler_async	./src/machine/Machine.cc	/^extern "C" void irq_handler_async(mword* isrFrame, mword idx) {$/;"	f
+isatty	./src/kernel/syscalls.cc	/^extern "C" int isatty(int fd) {$/;"	f
+isatty	./src/ulib/libKOS.cc	/^extern "C" int isatty(int fildes) {$/;"	f
+joinThread	./src/kernel/Process.cc	/^int Process::joinThread(mword idx, ptr_t& result) {$/;"	f	class:Process
+kassertprinte	./src/kernel/Output.cc	/^void kassertprinte() {$/;"	f
+kassertprinte	./src/kernel/Output.cc	/^void kassertprinte(const FmtHex& ptr) {$/;"	f
+kassertprinte	./src/kernel/Output.cc	/^void kassertprinte(const char* const msg) {$/;"	f
+kassertprinte	./src/kernel/Output.cc	/^void kassertprinte(const unsigned long long num) {$/;"	f
+kassertprinte	./src/unit/marray.cc	/^void kassertprinte(unsigned long long) {}$/;"	f
+kassertprints	./src/kernel/Output.cc	/^void kassertprints(const char* const loc, int line, const char* const func) {$/;"	f
+kassertprints	./src/unit/marray.cc	/^void kassertprints(char const*, int, char const*) {}$/;"	f
+kernelFS	./src/world/Access.cc	/^map<string,RamFile> kernelFS;$/;"	v
+keybLoop	./src/kernel/Kernel.cc	/^static void keybLoop() {$/;"	f	file:
+keyboard	./src/machine/Machine.cc	/^Keyboard keyboard;$/;"	v
+kill	./src/ulib/libKOS.cc	/^extern "C" int kill(pid_t pid, int sig) {$/;"	f
+kmain	./src/kernel/Kernel.cc	/^extern "C" void kmain(mword magic, mword addr, mword idx) {$/;"	f
+kosMain	./src/kernel/Kernel.cc	/^void kosMain() {$/;"	f
+legacy_free	./src/kernel/MemoryManager.cc	/^void MemoryManager::legacy_free(ptr_t p) {$/;"	f	class:MemoryManager
+legacy_malloc	./src/kernel/MemoryManager.cc	/^ptr_t MemoryManager::legacy_malloc(size_t s) {$/;"	f	class:MemoryManager
+levels	./src/kernel/Output.cc	/^Bitmap<> DBG::levels;               \/\/ stored in .bss, initialized early enough!$/;"	m	class:DBG	file:
+lock	./src/gdb/Gdb.cc	/^static SpinLock lock;$/;"	v	file:
+lock	./src/runtime/BlockingSync.cc	/^BasicLock Timeout::lock;$/;"	m	class:Timeout	file:
+low_level_init	./src/extern/lwip/lwip_glue.cc	/^void low_level_init(struct netif *netif) {$/;"	f
+low_level_input	./src/extern/lwip/lwip_glue.cc	/^struct pbuf* low_level_input(struct netif *netif, bufptr_t buffer, size_t size) {$/;"	f
+low_level_output	./src/extern/lwip/lwip_glue.cc	/^err_t low_level_output(struct netif *netif, struct pbuf *p) {$/;"	f
+lseek	./src/kernel/syscalls.cc	/^extern "C" off_t lseek(int fildes, off_t offset, int whence) {$/;"	f
+lseek	./src/ulib/libKOS.cc	/^extern "C" off_t lseek(int fildes, off_t offset, int whence) {$/;"	f
+lseek	./src/world/Access.cc	/^off_t FileAccess::lseek(off_t o, int whence) {$/;"	f	class:FileAccess
+lwipLock	./src/extern/lwip/sys_arch.cc	/^static OwnerLock* lwipLock;$/;"	v	file:
+lwip_add_netif	./src/extern/lwip/lwip_glue.cc	/^void* lwip_add_netif(void *ethif) {$/;"	f
+lwip_assert	./src/extern/lwip/sys_arch.cc	/^extern "C" void lwip_assert(const char* const loc, int line, const char* const func, const char* const msg) {$/;"	f
+lwip_init_tcpip	./src/extern/lwip/lwip_glue.cc	/^void lwip_init_tcpip() {$/;"	f
+lwip_net_receive	./src/extern/lwip/lwip_glue.cc	/^void lwip_net_receive(struct netif *nif, bufptr_t buffer, size_t size) {$/;"	f
+lwip_netif	./src/extern/cdi/cdi_glue.cc	/^static netif* lwip_netif = nullptr;$/;"	v	file:
+lwip_printf	./src/extern/lwip/sys_arch.cc	/^extern "C" void lwip_printf(const char* fmt, ...) {$/;"	f
+main	./src/unit/bitmap.cc	/^int main() {$/;"	f
+main	./src/unit/hierbitmap.cc	/^int main() {$/;"	f
+main	./src/unit/marray.cc	/^int main() {$/;"	f
+main	./src/unit/region.cc	/^int main() {$/;"	f
+main	./src/user/kbloop.cc	/^int main() {$/;"	f
+main	./src/user/manythread.cc	/^int main() {$/;"	f
+main	./src/user/systest.cc	/^int main() {$/;"	f
+main	./src/user/threadtest.cc	/^int main() {$/;"	f
+malloc	./src/kernel/syscalls.cc	/^extern "C" void* malloc(size_t size) { return MemoryManager::legacy_malloc(size); }$/;"	f
+mallocLock	./src/kernel/MemoryManager.cc	/^SpinLock MemoryManager::mallocLock;$/;"	m	class:MemoryManager	file:
+mallocSpace	./src/kernel/MemoryManager.cc	/^void* MemoryManager::mallocSpace;$/;"	m	class:MemoryManager	file:
+map	./src/kernel/MemoryManager.cc	/^vaddr MemoryManager::map(size_t s, paddr pma) {$/;"	f	class:MemoryManager
+mapIRQ	./src/machine/APIC.cc	/^void IOAPIC::mapIRQ(uint8_t irq, uint8_t intr, bool low, bool level) {$/;"	f	class:IOAPIC
+mapIrq	./src/machine/Machine.cc	/^void Machine::mapIrq(mword irq, mword vector) {$/;"	f	class:Machine
+mask	./src/devices/ISA_DMA.cc	/^inline void ISA_DMA::mask(uint8_t channel, bool mask) {$/;"	f	class:ISA_DMA
+maskIRQ	./src/machine/APIC.cc	/^void IOAPIC::maskIRQ(uint8_t irq) {$/;"	f	class:IOAPIC
+max	./src/kernel/syscalls.cc	/^static_assert(sizeof(syscalls)\/sizeof(syscall_t) == SyscallNum::max, "syscall list error");$/;"	m	class:SyscallNum	file:
+maxIDT	./src/machine/Machine.cc	/^static const unsigned int maxIDT = 256;$/;"	v	file:
+mbiEnd	./src/kernel/Multiboot.cc	/^vaddr Multiboot::mbiEnd = 0;$/;"	m	class:Multiboot	file:
+mbiStart	./src/kernel/Multiboot.cc	/^vaddr Multiboot::mbiStart = 0;$/;"	m	class:Multiboot	file:
+mem2hex	./src/gdb/Gdb.cc	/^static char* mem2hex(const char *mem, char *buf, int count, int may_fault) {$/;"	f	file:
+mmap	./src/ulib/libKOS.cc	/^extern "C" void* mmap(void* addr, size_t len, int prot, int flags, int filedes, off_t off) {$/;"	f
+mtx	./src/main/LockTest.cc	/^static Mutex mtx;$/;"	v	file:
+munmap	./src/ulib/libKOS.cc	/^extern "C" int munmap(void* addr, size_t len) {$/;"	f
+mutexTestMain	./src/main/LockTest.cc	/^static void mutexTestMain(ptr_t x) {$/;"	f	file:
+netcard_highest_id	./src/extern/cdi/cdi_glue.cc	/^static unsigned long netcard_highest_id = 0;$/;"	v	file:
+netcard_list	./src/extern/cdi/cdi_glue.cc	/^static cdi_list_t netcard_list = nullptr;$/;"	v	file:
+open	./src/kernel/syscalls.cc	/^extern "C" int open(const char *path, int oflag, ...) {$/;"	f
+open	./src/ulib/libKOS.cc	/^extern "C" int open(const char *path, int oflag, ...) {$/;"	f
+operator <<	./src/kernel/FrameManager.cc	/^ostream& operator<<(ostream& os, const FrameManager& fm) {$/;"	f
+operator <<	./src/machine/Paging.cc	/^ostream& operator<<(ostream& os, const Paging::FmtPE& f) {$/;"	f
+operator <<	./src/machine/Paging.cc	/^ostream& operator<<(ostream& os, const Paging::PageFaultFlags& f) {$/;"	f
+options	./src/kernel/Output.cc	/^static const char* options[] = {$/;"	v	file:
+out	./src/gdb/Gdb.cc	/^static char out[4096];$/;"	v	file:
+overrideFlags	./src/machine/Machine.cc	/^  uint16_t overrideFlags;$/;"	m	struct:IrqInfo	file:
+pageStore	./src/kernel/MemoryManager.cc	/^PageStore MemoryManager::pageStore;$/;"	m	class:MemoryManager	file:
+parse	./src/gdb/Gdb.cc	/^  void parse(char* in, char* out) {$/;"	f	struct:VCont
+pending	./src/gdb/Gdb.cc	/^  bool pending() { return action != 0 && (tid <= 0 || tid == cTID()); }$/;"	f	struct:VCont
+pit	./src/machine/Machine.cc	/^static PIT pit;$/;"	v	file:
+ports	./src/devices/ISA_DMA.cc	/^} ports[] = {$/;"	v	typeref:struct:__anon1	file:
+postSwitch	./src/runtime/Scheduler.cc	/^extern "C" Thread* postSwitch(Thread* prevThread, Scheduler* target) {$/;"	f
+pread	./src/world/Access.cc	/^ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {$/;"	f	class:FileAccess
+preempt	./src/runtime/Scheduler.cc	/^void Scheduler::preempt() {               \/\/ IRQs disabled, lock count inflated$/;"	f	class:Scheduler
+print	./src/kernel/AddressSpace.cc	/^void AddressSpace::print(ostream& os) const {$/;"	f	class:AddressSpace
+printcount	./src/main/LockTest.cc	/^static const int printcount = 500;$/;"	v	file:
+privilege	./src/kernel/syscalls.cc	/^extern "C" int privilege(ptr_t func, mword a1, mword a2, mword a3, mword a4) {$/;"	f
+privilege	./src/ulib/libKOS.cc	/^extern "C" int privilege(void* func, mword a1, mword a2, mword a3, mword a4) {$/;"	f
+processorCount	./src/machine/Machine.cc	/^mword Machine::processorCount = 0;$/;"	m	class:Machine	file:
+processorTable	./src/machine/Machine.cc	/^static Processor* processorTable = nullptr;$/;"	v	file:
+producer	./src/main/LockTest.cc	/^static void producer(ptr_t) {$/;"	f	file:
+pthread_cancel	./src/ulib/pthread.cc	/^extern "C" int pthread_cancel(pthread_t tid) {$/;"	f
+pthread_cond_broadcast	./src/ulib/pthread.cc	/^extern "C" int pthread_cond_broadcast(pthread_cond_t* c) {$/;"	f
+pthread_cond_destroy	./src/ulib/pthread.cc	/^extern "C" int pthread_cond_destroy(pthread_cond_t* c) {$/;"	f
+pthread_cond_init	./src/ulib/pthread.cc	/^extern "C" int pthread_cond_init(pthread_cond_t*restrict c, const pthread_condattr_t*restrict) {$/;"	f
+pthread_cond_signal	./src/ulib/pthread.cc	/^extern "C" int pthread_cond_signal(pthread_cond_t* c) {$/;"	f
+pthread_cond_wait	./src/ulib/pthread.cc	/^extern "C" int pthread_cond_wait(pthread_cond_t*restrict c, pthread_mutex_t*restrict m) {$/;"	f
+pthread_create	./src/ulib/pthread.cc	/^extern "C" int pthread_create(pthread_t*restrict tid, const pthread_attr_t*restrict attr, void* (*func)(void*), void*restrict data) {$/;"	f
+pthread_exit	./src/kernel/syscalls.cc	/^extern "C" void pthread_exit(void* result) {$/;"	f
+pthread_exit	./src/ulib/pthread.cc	/^extern "C" void pthread_exit(void* result) {$/;"	f
+pthread_join	./src/kernel/syscalls.cc	/^extern "C" int pthread_join(pthread_t tid, void** result) {$/;"	f
+pthread_join	./src/ulib/pthread.cc	/^extern "C" int pthread_join(pthread_t tid, void** result) {$/;"	f
+pthread_kill	./src/kernel/syscalls.cc	/^extern "C" int pthread_kill(pthread_t tid, int signal) {$/;"	f
+pthread_kill	./src/ulib/pthread.cc	/^extern "C" int pthread_kill(pthread_t tid, int sig) {$/;"	f
+pthread_mutex_destroy	./src/ulib/pthread.cc	/^extern "C" int pthread_mutex_destroy(pthread_mutex_t* m) {$/;"	f
+pthread_mutex_init	./src/ulib/pthread.cc	/^extern "C" int pthread_mutex_init(pthread_mutex_t*restrict m, const pthread_mutexattr_t*restrict a) {$/;"	f
+pthread_mutex_lock	./src/ulib/pthread.cc	/^extern "C" int pthread_mutex_lock(pthread_mutex_t* m) {$/;"	f
+pthread_mutex_trylock	./src/ulib/pthread.cc	/^extern "C" int pthread_mutex_trylock(pthread_mutex_t* m) {$/;"	f
+pthread_mutex_unlock	./src/ulib/pthread.cc	/^extern "C" int pthread_mutex_unlock(pthread_mutex_t* m) {$/;"	f
+pthread_self	./src/kernel/syscalls.cc	/^extern "C" pthread_t pthread_self() {$/;"	f
+pthread_self	./src/ulib/pthread.cc	/^extern "C" pthread_t pthread_self(void) {$/;"	f
+putbyte	./src/gdb/Gdb.cc	/^static void putbyte(unsigned char ch) {$/;"	f	file:
+putpacket	./src/gdb/Gdb.cc	/^static void putpacket(char *buffer) {$/;"	f	file:
+queue	./src/runtime/BlockingSync.cc	/^multimap<mword,Thread*> Timeout::queue;$/;"	m	class:Timeout	file:
+rCount	./src/main/Experiments.cc	/^static mword rCount = 0;$/;"	m	namespace:IPI_Experiment	file:
+read	./src/kernel/syscalls.cc	/^extern "C" ssize_t read(int fildes, void* buf, size_t nbyte) {$/;"	f
+read	./src/ulib/libKOS.cc	/^extern "C" ssize_t read(int fildes, void* buf, size_t nbyte) {$/;"	f
+read	./src/world/Access.cc	/^ssize_t FileAccess::read(void *buf, size_t nbyte) {$/;"	f	class:FileAccess
+readModules	./src/kernel/Multiboot.cc	/^void Multiboot::readModules(vaddr disp) {$/;"	f	class:Multiboot
+realloc	./src/kernel/syscalls.cc	/^extern "C" void* realloc(void* ptr, size_t size) {$/;"	f
+receiver	./src/main/Experiments.cc	/^static void receiver() { while (!done) rCount += 1; }$/;"	f	namespace:IPI_Experiment
+reg32_t	./src/gdb/Gdb.cc	/^typedef uint32_t reg32_t;$/;"	t	file:
+reg32buf	./src/gdb/Gdb.cc	/^  reg32_t reg32buf[reg32cnt];$/;"	m	struct:GdbCpuBase	file:
+reg32cnt	./src/gdb/Gdb.cc	/^static const size_t reg32cnt  = 7;$/;"	v	file:
+reg64_t	./src/gdb/Gdb.cc	/^typedef uint64_t reg64_t;$/;"	t	file:
+reg64buf	./src/gdb/Gdb.cc	/^  reg64_t reg64buf[reg64cnt];$/;"	m	struct:GdbCpuBase	file:
+reg64cnt	./src/gdb/Gdb.cc	/^static const size_t reg64cnt  = 17;$/;"	v	file:
+registerIrqAsync	./src/machine/Machine.cc	/^void Machine::registerIrqAsync(mword irq, funcvoid1_t handler, ptr_t ctx) {$/;"	f	class:Machine
+registerIrqSync	./src/machine/Machine.cc	/^void Machine::registerIrqSync(mword irq, mword vector) {$/;"	f	class:Machine
+registers	./src/devices/ISA_DMA.cc	/^} registers[] = {$/;"	v	typeref:struct:__anon2	file:
+reinit	./src/kernel/MemoryManager.cc	/^void MemoryManager::reinit( vaddr p, size_t s ) {$/;"	f	class:MemoryManager
+releaseCount	./src/main/LockTest.cc	/^static mword releaseCount;$/;"	v	file:
+remap	./src/kernel/Multiboot.cc	/^void Multiboot::remap(vaddr disp) {$/;"	f	class:Multiboot
+resetGdbAffinity	./src/gdb/Gdb.cc	/^static void resetGdbAffinity() {$/;"	f	file:
+reset_system	./src/devices/Keyboard.cc	/^void Keyboard::reset_system() {$/;"	f	class:Keyboard
+resume	./src/runtime/Scheduler.cc	/^void Scheduler::resume(Thread& t) {$/;"	f	class:Scheduler
+rflags	./src/machine/Machine.cc	/^  constexpr mword* rflags() const { return frame+2; }$/;"	f	class:IsrEntry	file:
+rip	./src/machine/Machine.cc	/^  constexpr mword* rip()    const { return frame;   }$/;"	f	class:IsrEntry	file:
+rrPreemptIPI	./src/machine/Machine.cc	/^void Machine::rrPreemptIPI(mword tick) {$/;"	f	class:Machine
+rsp	./src/machine/Machine.cc	/^  constexpr mword* rsp()    const { return frame+3; }$/;"	f	class:IsrEntry	file:
+rtc	./src/machine/Machine.cc	/^static RTC rtc;$/;"	v	file:
+run	./src/main/Experiments.cc	/^static void run() {$/;"	f	namespace:IPI_Experiment
+sCount	./src/main/Experiments.cc	/^static mword sCount = 0;$/;"	m	namespace:IPI_Experiment	file:
+savedAffinity	./src/gdb/Gdb.cc	/^static Scheduler* savedAffinity = nullptr;$/;"	v	file:
+savedThread	./src/gdb/Gdb.cc	/^static Thread* savedThread = nullptr;$/;"	v	file:
+scanCodeSet	./src/devices/Keyboard.cc	/^static int scanCodeSet = 2;$/;"	v	file:
+schedulerTable	./src/machine/Machine.cc	/^static Scheduler* schedulerTable = nullptr;$/;"	v	file:
+segment	./src/kernel/Output.cc	/^  ScreenSegment segment;$/;"	m	class:ScreenBuffer	file:
+semCreate	./src/kernel/syscalls.cc	/^extern "C" int semCreate(mword* rsid, mword init) {$/;"	f
+semCreate	./src/ulib/pthread.cc	/^extern "C" int semCreate(mword* rsid, mword init) {$/;"	f
+semDestroy	./src/kernel/syscalls.cc	/^extern "C" int semDestroy(mword sid) {$/;"	f
+semDestroy	./src/ulib/pthread.cc	/^extern "C" int semDestroy(mword sid) {$/;"	f
+semP	./src/kernel/syscalls.cc	/^extern "C" int semP(mword sid) {$/;"	f
+semP	./src/ulib/pthread.cc	/^extern "C" int semP(mword sid) {$/;"	f
+semV	./src/kernel/syscalls.cc	/^extern "C" int semV(mword sid) {$/;"	f
+semV	./src/ulib/pthread.cc	/^extern "C" int semV(mword sid) {$/;"	f
+semaphoreTestMain	./src/main/LockTest.cc	/^static void semaphoreTestMain(ptr_t x) {$/;"	f	file:
+sendIPI	./src/machine/Machine.cc	/^void Machine::sendIPI(mword idx, uint8_t vec) {$/;"	f	class:Machine
+sendWakeIPI	./src/machine/Machine.cc	/^void Machine::sendWakeIPI(Scheduler* scheduler) {$/;"	f	class:Machine
+sender	./src/main/Experiments.cc	/^static void sender() {$/;"	f	namespace:IPI_Experiment
+serving	./src/gdb/Gdb.cc	/^static volatile int64_t serving = 1;$/;"	v	file:
+setAffinity	./src/machine/Machine.cc	/^void Machine::setAffinity(Thread& t, mword idx) {$/;"	f	class:Machine
+setGdbAffinity	./src/gdb/Gdb.cc	/^static void setGdbAffinity() {$/;"	f	file:
+setReg32	./src/gdb/Gdb.cc	/^static void setReg32(size_t regno, reg32_t val, mword cpuIdx = cTID()-1) {$/;"	f	file:
+setReg64	./src/gdb/Gdb.cc	/^static void setReg64(size_t regno, reg64_t val, mword cpuIdx = cTID()-1) {$/;"	f	file:
+setup	./src/devices/ISA_DMA.cc	/^inline void ISA_DMA::setup(uint8_t channel, uint8_t mode, bool autoInit, paddr buffer, uint16_t length) {$/;"	f	class:ISA_DMA
+setupGDT	./src/machine/Processor.cc	/^void Processor::setupGDT(unsigned int number, unsigned int dpl, bool code) {$/;"	f	class:Processor
+setupIDT	./src/machine/Machine.cc	/^void Machine::setupIDT(uint32_t number, paddr address, uint32_t ist) {$/;"	f	class:Machine
+setupIDTable	./src/machine/Machine.cc	/^void Machine::setupIDTable() {$/;"	f	class:Machine
+setupTSS	./src/machine/Processor.cc	/^void Processor::setupTSS(unsigned int number, paddr address) {$/;"	f	class:Processor
+signal	./src/gdb/Gdb.cc	/^  long signal;$/;"	m	struct:VCont	file:
+signum	./src/ulib/libKOS.cc	/^int signum = 0;$/;"	v
+sizeof	./src/machine/Machine.cc	/^static_assert(sizeof(InterruptDescriptor) == 2 * sizeof(mword), "sizeof(InterruptDescriptor) != 2 * sizeof(mword)" );$/;"	v
+sizeof	./src/machine/Machine.cc	/^static_assert(sizeof(SegmentDescriptor) == sizeof(mword), "sizeof(SegmentDescriptor) != sizeof(mword)" );$/;"	v
+sizeof	./src/machine/Machine.cc	/^static_assert(sizeof(ptr_t) == sizeof(mword), "mword != ptr_t");$/;"	v
+sizeof	./src/machine/Machine.cc	/^static_assert(sizeof(size_t) == sizeof(mword), "mword != size_t");$/;"	v
+sizeof	./src/machine/Machine.cc	/^static_assert(sizeof(uint64_t) == sizeof(mword), "mword != uint64_t" );$/;"	v
+ss	./src/machine/Machine.cc	/^  constexpr mword* ss()     const { return frame+4; }$/;"	f	class:IsrEntry	file:
+stack	./src/gdb/Gdb.cc	/^  char stack[stackSize-sizeof(GdbCpuBase)];$/;"	m	struct:GdbCpu	file:
+stackSize	./src/gdb/Gdb.cc	/^  static const size_t stackSize = (1<<16);$/;"	m	struct:GdbCpu	file:
+start	./src/runtime/Thread.cc	/^void Thread::start(ptr_t func, ptr_t p1, ptr_t p2, ptr_t p3) {$/;"	f	class:Thread
+startGdbCpu	./src/gdb/Gdb.cc	/^void startGdbCpu(mword idx) {$/;"	f
+startTransfer	./src/devices/ISA_DMA.cc	/^bool ISA_DMA::startTransfer(uint8_t channel, uint8_t mode, paddr buffer, size_t length) {$/;"	f	class:ISA_DMA
+state	./src/gdb/Gdb.cc	/^  volatile enum { Unknown, Stopped, Running } state;$/;"	m	struct:GdbCpuBase	typeref:enum:GdbCpuBase::__anon3	file:
+suspend	./src/runtime/Scheduler.cc	/^void Scheduler::suspend(BasicLock& lk) {$/;"	f	class:Scheduler
+suspend	./src/runtime/Scheduler.cc	/^void Scheduler::suspend(BasicLock& lk1, BasicLock& lk2) {$/;"	f	class:Scheduler
+switchThread	./src/runtime/Scheduler.cc	/^inline void Scheduler::switchThread(Scheduler* target, Args&... a) {$/;"	f	class:Scheduler
+syncQueue	./src/main/LockTest.cc	/^static MessageQueue<FixedRingBuffer<mword, 256>> syncQueue;$/;"	v	file:
+sys_arch_mbox_fetch	./src/extern/lwip/sys_arch.cc	/^extern "C" u32_t sys_arch_mbox_fetch(sys_mbox_t *mbox, void **msg, u32_t timeout) {$/;"	f
+sys_arch_mbox_tryfetch	./src/extern/lwip/sys_arch.cc	/^extern "C" u32_t sys_arch_mbox_tryfetch(sys_mbox_t *mbox, void **msg) {$/;"	f
+sys_arch_protect	./src/extern/lwip/sys_arch.cc	/^extern "C" sys_prot_t sys_arch_protect(void) {$/;"	f
+sys_arch_sem_wait	./src/extern/lwip/sys_arch.cc	/^extern "C" u32_t sys_arch_sem_wait(sys_sem_t *sem, u32_t timeout) {$/;"	f
+sys_arch_unprotect	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_arch_unprotect(sys_prot_t pval) {$/;"	f
+sys_init	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_init(void) {$/;"	f
+sys_jiffies	./src/extern/lwip/sys_arch.cc	/^extern "C" u32_t sys_jiffies(void) { KABORT0(); return 0; }$/;"	f
+sys_mbox_free	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_mbox_free(sys_mbox_t *mbox) {$/;"	f
+sys_mbox_new	./src/extern/lwip/sys_arch.cc	/^extern "C" err_t sys_mbox_new(sys_mbox_t *mbox, int size) {$/;"	f
+sys_mbox_post	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_mbox_post(sys_mbox_t *mbox, void *msg) {$/;"	f
+sys_mbox_set_invalid	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_mbox_set_invalid(sys_mbox_t *mbox) {$/;"	f
+sys_mbox_trypost	./src/extern/lwip/sys_arch.cc	/^extern "C" err_t sys_mbox_trypost(sys_mbox_t *mbox, void *msg) {$/;"	f
+sys_mbox_valid	./src/extern/lwip/sys_arch.cc	/^extern "C" int sys_mbox_valid(sys_mbox_t *mbox) {$/;"	f
+sys_now	./src/extern/lwip/sys_arch.cc	/^extern "C" u32_t sys_now(void) {$/;"	f
+sys_sem_free	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_sem_free(sys_sem_t *sem) {$/;"	f
+sys_sem_new	./src/extern/lwip/sys_arch.cc	/^extern "C" err_t sys_sem_new(sys_sem_t *sem, u8_t count) {$/;"	f
+sys_sem_set_invalid	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_sem_set_invalid(sys_sem_t *sem) {$/;"	f
+sys_sem_signal	./src/extern/lwip/sys_arch.cc	/^extern "C" void sys_sem_signal(sys_sem_t *sem) {$/;"	f
+sys_sem_valid	./src/extern/lwip/sys_arch.cc	/^extern "C" int sys_sem_valid(sys_sem_t *sem) {$/;"	f
+sys_thread_new	./src/extern/lwip/sys_arch.cc	/^extern "C" sys_thread_t sys_thread_new(const char *name, lwip_thread_fn thread, void *arg, int stacksize, int prio) {$/;"	f
+syscall_handler	./src/kernel/syscalls.cc	/^extern "C" ssize_t syscall_handler(mword x, mword a1, mword a2, mword a3, mword a4, mword a5) {$/;"	f
+syscall_t	./src/kernel/syscalls.cc	/^typedef ssize_t (*syscall_t)(mword a1, mword a2, mword a3, mword a4, mword a5);$/;"	t	file:
+syscalls	./src/kernel/syscalls.cc	/^static const syscall_t syscalls[] = {$/;"	v	file:
+sysfunc	./src/user/systest.cc	/^static int sysfunc() {$/;"	f	file:
+tableATtoXT	./src/devices/Keyboard.cc	/^static const uint8_t tableATtoXT[0x80] = {$/;"	v	file:
+tableXTtoKey	./src/devices/Keyboard.cc	/^static const int tableXTtoKey[][2] = {$/;"	v	file:
+task	./src/user/manythread.cc	/^static void* task(void* x) {$/;"	f	file:
+tcounter	./src/gdb/Gdb.cc	/^static int64_t tcounter = 1;$/;"	v	file:
+tcpip_init_done	./src/extern/lwip/lwip_glue.cc	/^static void tcpip_init_done(void *arg) {$/;"	f	file:
+terminate	./src/runtime/Scheduler.cc	/^void Scheduler::terminate() {$/;"	f	class:Scheduler
+testcount	./src/main/LockTest.cc	/^static const int testcount  = 5000;$/;"	v	file:
+tick	./src/kernel/Kernel.cc	/^volatile mword Clock::tick;     \/\/ Clock.h$/;"	m	class:Clock	file:
+ticket	./src/gdb/Gdb.cc	/^  int64_t ticket;$/;"	m	struct:GdbCpuBase	file:
+tid	./src/gdb/Gdb.cc	/^  long tid;$/;"	m	struct:VCont	file:
+tipiCount	./src/main/Experiments.cc	/^static volatile mword tipiCount = 0;$/;"	m	namespace:IPI_Experiment	file:
+tipiCounter	./src/main/Experiments.cc	/^static void tipiCounter() { tipiCount += 1; }$/;"	f	namespace:IPI_Experiment
+tipiHandler	./src/machine/Machine.cc	/^void (*tipiHandler)(void) = nullptr;$/;"	v
+tipiReceiver	./src/machine/Machine.cc	/^static void tipiReceiver() {$/;"	f	file:
+tscEnd	./src/main/Experiments.cc	/^static mword tscStart, tscEnd;$/;"	m	namespace:IPI_Experiment	file:
+tscStart	./src/main/Experiments.cc	/^static mword tscStart, tscEnd;$/;"	m	namespace:IPI_Experiment	file:
+tsem	./src/main/LockTest.cc	/^static Semaphore tsem;$/;"	v	file:
+unlock	./src/runtime/Scheduler.cc	/^static inline void unlock() {}$/;"	f	file:
+unlock	./src/runtime/Scheduler.cc	/^static inline void unlock(BasicLock &l, Args&... a) {$/;"	f	file:
+unmap	./src/kernel/MemoryManager.cc	/^void MemoryManager::unmap(vaddr v, size_t s, bool alloc) {$/;"	f	class:MemoryManager
+usleep	./src/kernel/syscalls.cc	/^extern "C" int usleep(useconds_t usecs) {$/;"	f
+usleep	./src/ulib/libKOS.cc	/^extern "C" int usleep(useconds_t usecs) {$/;"	f
+vCont	./src/gdb/Gdb.cc	/^} vCont;$/;"	v	typeref:struct:VCont
+valid	./src/devices/Devices.cc	/^bool DebugDevice::valid = false;  \/\/ Serial.h$/;"	m	class:DebugDevice	file:
+video	./src/devices/Devices.cc	/^char* Screen::video = nullptr;    \/\/ Screen.h $/;"	m	class:Screen	file:
+write	./src/kernel/syscalls.cc	/^extern "C" ssize_t write(int fildes, const void* buf, size_t nbyte) {$/;"	f
+write	./src/ulib/libKOS.cc	/^extern "C" ssize_t write(int fildes, const void* buf, size_t nbyte) {$/;"	f
+x400	./src/machine/Machine.cc	/^static_assert(sizeof(APIC) == 0x400, "sizeof(APIC) != 0x400" );$/;"	v
+xsputn	./src/kernel/Output.cc	/^  virtual streamsize xsputn(const char* s, streamsize n) {$/;"	f	class:DebugBuffer
+xsputn	./src/kernel/Output.cc	/^  virtual streamsize xsputn(const char* s, streamsize n) {$/;"	f	class:ScreenBuffer
+xyz	./src/user/kbloop.cc	/^XYZ xyz;$/;"	v
+y	./src/user/threadtest.cc	/^int y = 83;$/;"	v
+~IsrEntry	./src/machine/Machine.cc	/^  ~IsrEntry() {$/;"	f	class:IsrEntry
+~Process	./src/kernel/Process.cc	/^Process::~Process() {$/;"	f	class:Process
+~XYZ	./src/user/kbloop.cc	/^  ~XYZ() {$/;"	f	class:XYZ

@@ -18,7 +18,8 @@
 
 #include <cstring>
 
-map<string,RamFile> kernelFS;
+map<string, RamFile> kernelFS;
+map<string, fileName> newFS;
 
 ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
   if (o + nbyte > rf.size) nbyte = rf.size - o;
@@ -26,6 +27,25 @@ ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
   return nbyte;
 }
 
+
+// document alloc method in documentation.
+// what is the size of the ram being allocated? in documentation
+// pros and cons of allocation method
+// memcpy from readModules copies file into system
+// have to make own readModules as well
+// what info does the fs store about each file, and
+// what are the capabilities?
+// start addr of each file under contig
+// what is the free space after each write of the ram block?
+class newAccessor : Access {
+	
+};
+
+
+// These are virtual functions because of the 
+// definitions in Access.h. Have to inherit these
+// functions. Add own here, rather than creating
+// a new class.
 ssize_t FileAccess::read(void *buf, size_t nbyte) {
   olock.acquire();
   ssize_t len = pread(buf, nbyte, offset);
@@ -46,3 +66,4 @@ off_t FileAccess::lseek(off_t o, int whence) {
   offset = new_o;
   return offset;
 }
+

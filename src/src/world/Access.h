@@ -43,7 +43,18 @@ struct RamFile {
   RamFile(vaddr v, paddr p, size_t s) : vma(v), pma(p), size(s) {}
 };
 
+// Metadata structure for representing the name
+// of a file as a structure. 
+struct fileName {
+  paddr pma;
+  size_t size;
+  fileName(paddr p, size_t s) : pma(p), size(s) {}
+};
+
 extern map<string,RamFile> kernelFS;
+// Modifying the format of 'kernelFS' to reflect our problem space.
+// Creating a new map to traverse through the filesystem.
+extern map<string, fileName> newFS;
 
 class FileAccess : public Access {
   SpinLock olock;
