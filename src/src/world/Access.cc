@@ -21,7 +21,7 @@
 // in Access.h
 
 // DONE
-char ramBlock[9999];
+char ramBlock[16000];
 map<string, RamFile> kernelFS;
 map<string, fileName> newFS;
 
@@ -43,12 +43,14 @@ ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
 // start addr of each file under contig
 // what is the free space after each write of the ram block?
 
+//done
 ssize_t newAccessor::pread(void *buf, size_t nbyte, off_t o) {
   if (o + nbyte > fn.size) nbyte = fn.size - o;
-  memcpy( buf, (bufptr_t)(fn.vma + o), nbyte );
+  memcpy( buf, (bufptr_t)(fn.vma + o), nbyte);
   return nbyte;
 }
 
+//done
 ssize_t newAccessor::read(void *buf, size_t nbyte) {
   olock.acquire();
   ssize_t len = pread(buf, nbyte, offset);
@@ -56,7 +58,6 @@ ssize_t newAccessor::read(void *buf, size_t nbyte) {
   olock.release();
   return len;
 }
-
 
 // done
 ssize_t newAccessor::pwrite(off_t o, size_t nbyte, void *buf) {

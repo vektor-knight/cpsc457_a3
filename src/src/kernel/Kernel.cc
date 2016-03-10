@@ -39,19 +39,23 @@ static void keybLoop() {
 #endif
 
 void kosMain() {
-  KOUT::outl("Welcome to KOS!", kendl);
-  auto iter = kernelFS.find("motb");
-  if (iter == kernelFS.end()) {
+//  KOUT::outl("Welcome to KOS!", kendl);
+  auto iter = newFS.find("filesystem_test");
+  if (iter == newFS.end()) {
     KOUT::outl("motb information not found");
   } else {
-    FileAccess f(iter->second);
+    newAccessor f(iter->second);
     for (;;) {
       char c;
-      if (f.read(&c, 1) == 0) break;
+      if (f.read(&c, 1) == 0) break;	// reading done
       KOUT::out1(c);
     }
-    KOUT::outl();
+
+	for (;;)
+//    KOUT::outl();
   }
+
+/*
 #if TESTING_TIMER_TEST
   StdErr.print(" timer test, 3 secs...");
   for (int i = 0; i < 3; i++) {
@@ -71,7 +75,7 @@ void kosMain() {
     Timeout::sleep(Clock::now() + 1000);
     KOUT::outl("...ping...");
   }
-#endif
+#endif */
 }
 
 extern "C" void kmain(mword magic, mword addr, mword idx)         __section(".boot.text");

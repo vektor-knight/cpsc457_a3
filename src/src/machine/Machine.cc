@@ -374,6 +374,9 @@ apDone:
   // initialize kernel file system with boot modules
   Multiboot::readModules(kernelBase);
 
+	// allocate ram block while kernel FS is being built
+  char ramBlock[16000];
+
   // more info from ACPI; could find IOAPIC interrupt pins for PCI devices
   initACPI2(); // needs "current thread"
 
