@@ -17,9 +17,14 @@
 #include "world/Access.h"
 
 #include <cstring>
+// might need to include string again, but it is already
+// in Access.h
 
+// DONE
+char ramBlock[9999];
 map<string, RamFile> kernelFS;
 map<string, fileName> newFS;
+
 
 ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
   if (o + nbyte > rf.size) nbyte = rf.size - o;
@@ -37,15 +42,50 @@ ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
 // what are the capabilities?
 // start addr of each file under contig
 // what is the free space after each write of the ram block?
-class newAccessor : Access {
-	
-};
+
+ssize_t newAccessor::pread(void *buf, size_t nbyte, off_t o) {
+  if (o + nbyte > fn.size) nbyte = fn.size - o;
+  memcpy( buf, (bufptr_t)(fn.vma + o), nbyte );
+  return nbyte;
+}
+
+ssize_t newAccessor::read(void *buf, size_t nbyte) {
+  olock.acquire();
+  ssize_t len = pread(buf, nbyte, offset);
+  if (len >= 0) offset += len;
+  olock.release();
+  return len;
+}
+
+
+// done
+ssize_t newAccessor::pwrite(off_t o, size_t nbyte, void *buf) {
+	if (nbyte + o > fn.size) {
+		nbyte = fn.size - o;
+	}
+	memcpy(buf, (bufptr_t)(fn.vma + o), nbyte);
+	return nbyte;
+}
+
+// document this
+//done
+ssize_t newAccessor::write(void *buf, size_t nbyte) {
+	olock.acquire();
+	ssize_t block = pwrite(offset, nbyte, buf);
+	if (block >= 0) {
+		offset += block; // naive contig allocation. start block from current offset
+	}
+	olock.release();
+	return block;
+}
 
 
 // These are virtual functions because of the 
 // definitions in Access.h. Have to inherit these
 // functions. Add own here, rather than creating
 // a new class.
+
+
 ssize_t FileAccess::read(void *buf, size_t nbyte) {
   olock.acquire();
   ssize_t len = pread(buf, nbyte, offset);

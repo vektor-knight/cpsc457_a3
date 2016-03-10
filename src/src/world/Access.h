@@ -45,16 +45,40 @@ struct RamFile {
 
 // Metadata structure for representing the name
 // of a file as a structure. 
+// DONE
 struct fileName {
+  vaddr vma;
   paddr pma;
   size_t size;
-  fileName(paddr p, size_t s) : pma(p), size(s) {}
+  fileName(vaddr v, paddr p, size_t s) : vma(v), pma(p), size(s) {}
 };
 
 extern map<string,RamFile> kernelFS;
 // Modifying the format of 'kernelFS' to reflect our problem space.
 // Creating a new map to traverse through the filesystem.
+// DONE
 extern map<string, fileName> newFS;
+extern char ramBlock[];
+
+// Since we are only doing simple I/O (read, write),
+// spinlocks have to be checked. Each read/write entails
+// a thread being created.
+// Only need offset to characterize which location in
+// the ramBlock we are currently in, and the information
+// for the name of the file ("fn").
+class newAccessor : public Access {
+  SpinLock olock;
+  off_t offset;
+  const fileName &fn;
+
+public:
+  newAccessor(const fileName &fn) : offset(0), fn(fn) {}
+  virtual ssize_t pwrite(off_t o, size_t nbyte, void *buf);
+  virtual ssize_t write(void *buf, size_t nbyte);
+  virtual ssize_t read(void *buf, size_t nbyte); // to do
+  virtual ssize_t pread(void *buf, size_t nbyte, off_t o); //to do
+};
+
 
 class FileAccess : public Access {
   SpinLock olock;
