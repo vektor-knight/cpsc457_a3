@@ -55,16 +55,35 @@ void kosMain() {
   auto writeIter = newFS.find("filesystem_test"); // file is opened again
   string output = "My filesystem works !"; // to be written to filesystem_test
   char outputArray [20];
-
-  for (int i = 0; i<21; i++) {
-    outputArray[i] = output[i];
-  }
-  
   newAccessor g(writeIter->second);
-  for (int j = 0; j<21; j++) {
-    g.write(&outputArray[j], 1);
-  }
 
+  for (int i = 0; i<output.size(); i++) {
+    outputArray[i] = output[i];
+    strcpy(ramBlock, &outputArray[i]);
+    if (g.write(&ramBlock[i], 1) == 0) break; KOUT::out1(ramBlock[i]);
+  }   
+
+  
+/*
+
+  for (int j = 0; j<21; j++) {
+	strcpy(ramBlock, &outputArray[j]);
+  //  for (;;) {
+      if (g.write(&ramBlock[j], 1) == 0) break;
+    //}
+  }       KOUT::out1(ramBlock);
+	//KOUT::out1(outputArray);
+ // KOUT::out1(ramBlock);
+  //KOUT::outl();
+*/
+/*
+  for (;;) {
+    if (g.write(&outputArray, 1) == 0) break;
+  }
+*/
+/*
+
+*/
 /*
   string output = "My filesystem works !";
  // ramBlock[9999]; // don't need this, dynamically allocated

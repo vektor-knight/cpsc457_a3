@@ -51,7 +51,7 @@ ssize_t newAccessor::pread(void *buf, size_t nbyte, off_t o) {
 }
 
 //done
-ssize_t newAccessor::read(void *buf, size_t nbyte) {
+ssize_t newAccessor::read(char *buf, size_t nbyte) {
   olock.acquire();
   ssize_t len = pread(buf, nbyte, offset);
   if (len >= 0) offset += len;
@@ -70,7 +70,7 @@ ssize_t newAccessor::pwrite(off_t o, size_t nbyte, void *buf) {
 
 // document this
 //done
-ssize_t newAccessor::write(void *buf, size_t nbyte) {
+ssize_t newAccessor::write(char *buf, size_t nbyte) {
 	olock.acquire();
 	ssize_t block = pwrite(offset, nbyte, buf);
 	if (block >= 0) {

@@ -74,8 +74,8 @@ class newAccessor : public Access {
 public:
   newAccessor(const fileName &fn) : offset(0), fn(fn) {}
   virtual ssize_t pwrite(off_t o, size_t nbyte, void *buf);
-  virtual ssize_t write(void *buf, size_t nbyte);
-  virtual ssize_t read(void *buf, size_t nbyte); // to do
+  virtual ssize_t write(char *buf, size_t nbyte);
+  virtual ssize_t read(char *buf, size_t nbyte); // to do
   virtual ssize_t pread(void *buf, size_t nbyte, off_t o); //to do
 };
 
