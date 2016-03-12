@@ -1,5 +1,5 @@
 /******************************************************************************
-    Copyright © 2012-2015 Martin Karsten
+    Copyright Â© 2012-2015 Martin Karsten
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -42,7 +42,7 @@ void kosMain() {
 //  KOUT::outl("Welcome to KOS!", kendl);
   auto iter = newFS.find("filesystem_test");
   if (iter == newFS.end()) {
-    KOUT::outl("motb information not found");
+    KOUT::outl("filesystem_test information not found");
   } else {
     newAccessor f(iter->second);
     for (;;) {
@@ -50,10 +50,38 @@ void kosMain() {
       if (f.read(&c, 1) == 0) break;	// reading done
       KOUT::out1(c);
     }
-
-	for (;;)
-//    KOUT::outl();
   }
+
+  auto writeIter = newFS.find("filesystem_test"); // file is opened again
+  string output = "My filesystem works !"; // to be written to filesystem_test
+  char outputArray [20];
+
+  for (int i = 0; i<21; i++) {
+    outputArray[i] = output[i];
+  }
+  
+  newAccessor g(writeIter->second);
+  for (int j = 0; j<21; j++) {
+    g.write(&outputArray[j], 1);
+  }
+
+/*
+  string output = "My filesystem works !";
+ // ramBlock[9999]; // don't need this, dynamically allocated
+  newAccessor g(iter->second);
+  
+  for (int i = 0; i<25; i++) {
+    strcpy(ramBlock, &output[i]);
+    g.write(&ramBlock[i], 1);
+//    KOUT::out1();
+    KOUT::out1("newFS");
+  }
+//  KOUT::outl(&ramBlock);
+  KOUT::outl();
+
+*/
+
+}
 
 /*
 #if TESTING_TIMER_TEST
@@ -76,7 +104,7 @@ void kosMain() {
     KOUT::outl("...ping...");
   }
 #endif */
-}
+
 
 extern "C" void kmain(mword magic, mword addr, mword idx)         __section(".boot.text");
 extern "C" void kmain(mword magic, mword addr, mword idx) {
