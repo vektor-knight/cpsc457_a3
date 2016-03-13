@@ -39,7 +39,6 @@ static void keybLoop() {
 #endif
 
 void kosMain() {
-//  KOUT::outl("Welcome to KOS!", kendl);
   auto iter = newFS.find("filesystem_test");
   if (iter == newFS.end()) {
     KOUT::outl("filesystem_test information not found");
@@ -52,77 +51,23 @@ void kosMain() {
     }
   }
 
-  auto writeIter = newFS.find("filesystem_test"); // file is opened again
-  string output = "My filesystem works !"; // to be written to filesystem_test
-  char outputArray [20];
+  auto writeIter = newFS.find("filesystem_test");
+  char* message = "My filesystem works !";
+
   newAccessor g(writeIter->second);
-
-  for (int i = 0; i<output.size(); i++) {
-    outputArray[i] = output[i];
-    strcpy(ramBlock, &outputArray[i]);
-    if (g.write(&ramBlock[i], 1) == 0) break; KOUT::out1(ramBlock[i]);
-  }   
-
-  
-/*
-
-  for (int j = 0; j<21; j++) {
-	strcpy(ramBlock, &outputArray[j]);
-  //  for (;;) {
-      if (g.write(&ramBlock[j], 1) == 0) break;
-    //}
-  }       KOUT::out1(ramBlock);
-	//KOUT::out1(outputArray);
- // KOUT::out1(ramBlock);
-  //KOUT::outl();
-*/
-/*
-  for (;;) {
-    if (g.write(&outputArray, 1) == 0) break;
-  }
-*/
-/*
-
-*/
-/*
-  string output = "My filesystem works !";
- // ramBlock[9999]; // don't need this, dynamically allocated
-  newAccessor g(iter->second);
-  
-  for (int i = 0; i<25; i++) {
-    strcpy(ramBlock, &output[i]);
+  for (int i = 0; i < sizeof(ramBlock); i++) {
+    strcpy(ramBlock, message);
     g.write(&ramBlock[i], 1);
-//    KOUT::out1();
-    KOUT::out1("newFS");
-  }
-//  KOUT::outl(&ramBlock);
-  KOUT::outl();
+    KOUT::out1(&ramBlock[i]);
+  } 
 
-*/
+  for(int i = 0; i < sizeof("My filesystem works !"); i++) {
+    KOUT::out1(ramBlock[i]);
+  }
+
+    KOUT::outl();
 
 }
-
-/*
-#if TESTING_TIMER_TEST
-  StdErr.print(" timer test, 3 secs...");
-  for (int i = 0; i < 3; i++) {
-    Timeout::sleep(Clock::now() + 1000);
-    StdErr.print(' ', i+1);
-  }
-  StdErr.print(" done.", kendl);
-#endif
-#if TESTING_KEYCODE_LOOP
-  Thread* t = Thread::create()->setPriority(topPriority);
-  Machine::setAffinity(*t, 0);
-  t->start((ptr_t)keybLoop);
-#endif
-  Thread::create()->start((ptr_t)UserMain);
-#if TESTING_PING_LOOP
-  for (;;) {
-    Timeout::sleep(Clock::now() + 1000);
-    KOUT::outl("...ping...");
-  }
-#endif */
 
 
 extern "C" void kmain(mword magic, mword addr, mword idx)         __section(".boot.text");

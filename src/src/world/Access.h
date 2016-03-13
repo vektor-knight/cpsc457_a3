@@ -44,8 +44,10 @@ struct RamFile {
 };
 
 // Metadata structure for representing the name
-// of a file as a structure. 
-// DONE
+// of a file as a data structure. Reading and writing
+// will happen with respect to a memory block, but offsets
+// cannot be calculated without the name of the file 
+// (as well as its associated data - virtual address and so on).
 struct fileName {
   vaddr vma;
   paddr pma;
@@ -58,25 +60,39 @@ extern map<string,RamFile> kernelFS;
 // Creating a new map to traverse through the filesystem.
 // DONE
 extern map<string, fileName> newFS;
-extern char ramBlock[];
+
+// Allocate a  block of RAM, which simulates persistence
+// only while KOS is running. Our new file system will
+// have access to this object throughout run-time.
+// Originally, we had allocated this memory in Machine.h, but
+// surmised that we were faced with what was largely a design decision.
+// It made sense to put this object into Access.h since all file access
+// and manipulation behaviours (eg. read, write) are also done here,
+// rather than at the "machine-level".
+extern char ramBlock[16000];
 
 // Since we are only doing simple I/O (read, write),
 // spinlocks have to be checked. Each read/write entails
 // a thread being created.
 // Only need offset to characterize which location in
 // the ramBlock we are currently in, and the information
-// for the name of the file ("fn").
+// for the name of the file ("fn"). Offset calculations
+// are done with respect to a fileName, and will later
+// be used to access parts of a memory block when read
+// and write functions are called on the memory.
 class newAccessor : public Access {
   SpinLock olock;
   off_t offset;
   const fileName &fn;
 
+// New file accessor class, which will later on implement
+// the following virtual functions (pwrite was provided).
 public:
   newAccessor(const fileName &fn) : offset(0), fn(fn) {}
   virtual ssize_t pwrite(off_t o, size_t nbyte, void *buf);
   virtual ssize_t write(char *buf, size_t nbyte);
-  virtual ssize_t read(char *buf, size_t nbyte); // to do
-  virtual ssize_t pread(void *buf, size_t nbyte, off_t o); //to do
+  virtual ssize_t read(char *buf, size_t nbyte); 
+  virtual ssize_t pread(void *buf, size_t nbyte, off_t o); 
 };
 
 
