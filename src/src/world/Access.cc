@@ -30,17 +30,6 @@ ssize_t FileAccess::pread(void *buf, size_t nbyte, off_t o) {
   return nbyte;
 }
 
-// document alloc method in documentation.
-// what is the size of the ram being allocated? in documentation
-// pros and cons of allocation method
-// memcpy from readModules copies file into system
-// have to make own readModules as well
-// what info does the fs store about each file, and
-// what are the capabilities?
-// start addr of each file under contig
-// what is the free space after each write of the ram block?
-
-
 ssize_t newAccessor::pread(void *buf, size_t nbyte, off_t o) {
   if (o + nbyte > fn.size) nbyte = fn.size - o;
   memcpy( buf, (bufptr_t)(fn.vma + o), nbyte);
